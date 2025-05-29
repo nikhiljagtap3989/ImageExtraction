@@ -1,0 +1,32 @@
+{
+  "invoice_number": "INV-3337",
+  "order_number": "12345",
+  "invoice_date": "January 25, 2016",
+  "due_date": "January 31, 2016",
+  "total_due": "$93.50",
+  "from": {
+    "name": "DEMO - Sliced Invoices",
+    "address": "Suite 5A-1204\n123 Somewhere Street\nYour City AZ 12345",
+    "email": "admin@slicedinvoices.com"
+  },
+  "to": {
+    "name": "Test Business",
+    "address": "123 Somewhere St\nMelbourne, VIC 3000",
+    "email": "test@test.com"
+  },
+  "line_items": [
+    {
+      "quantity": "1.00",
+      "service": "Web Design\nThis is a sample description...",
+      "rate_price": "$85.00",
+      "adjust": "0.00%",
+      "sub_total": "$85.00"
+    }
+  ],
+  "sub_total": "$85.00",
+  "tax": "$8.50",
+  "total": "$93.50",
+  "bank_name": "ANZ Bank",
+  "account_number": "1234 1234",
+  "bsb_number": "4321 432"
+}

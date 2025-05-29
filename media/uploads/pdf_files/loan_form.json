@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "date_issued": "2/15/2013",
+    "loan_term": "30 years",
+    "purpose": "Purchase",
+    "product": "Fixed Rate",
+    "loan_type": "Conventional",
+    "loan_id": "123456789",
+    "rate_lock": "NO YES, until 4/16/2013 at 5:00 p.m. EDT Before closing, your interest rate, points, and lender credits can change unless you lock the interest rate. All other estimated closing costs expire on 3/4/2013 at 5:00p.m. EDT"
+  },
+  "party_details": {
+    "applicants": "Michael Jones and Mary Stone 123 Anywhere Street Anytown, ST 12345",
+    "property": "456 Somewhere Avenue Anytown, ST 12345"
+  },
+  "line_items": [
+    {
+      "loan_amount": "$162,000",
+      "can_increase_after_closing": "NO"
+    },
+    {
+      "interest_rate": "3.875%",
+      "can_increase_after_closing": "NO"
+    },
+    {
+      "monthly_principal_interest": "$761.78",
+      "can_increase_after_closing": "NO"
+    },
+    {
+      "prepayment_penalty": "YES As high as $3,240 if you pay off the loan during the first 2 years"
+    },
+    {
+      "balloon_payment": "NO"
+    },
+    {
+      "principal_interest_years_1_7": "$761.78",
+      "principal_interest_years_8_30": "$761.78"
+    },
+    {
+      "mortgage_insurance_years_1_7": "82"
+    },
+    {
+      "estimated_escrow_years_1_7": "206",
+      "estimated_escrow_years_8_30": "206"
+    },
+    {
+      "estimated_total_monthly_payment_years_1_7": "$1,050",
+      "estimated_total_monthly_payment_years_8_30": "$968"
+    },
+    {
+      "estimated_taxes_insurance_assessments": "$206 a month"
+    }
+  ],
+  "totals": {
+    "sale_price": "$180,000",
+    "estimated_closing_costs": "$8,054 Includes $5,672 in Loan Costs + $2,382 in Other Costs - $0 in Lender Credits. See page 2 for details.",
+    "estimated_cash_to_close": "$16,054 Includes Closing Costs. See Calculating Cash to Close on page 2 for details."
+  },
+  "other": {
+    "escrow_property_taxes": "YES",
+    "escrow_homeowners_insurance": "YES",
+    "escrow_other": "See Section G on page 2 for escrowed property costs. You must pay for other property costs separately."
+  }
+}

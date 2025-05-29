@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "airway_bill_no": "000231",
+    "invoice_no": "000562",
+    "invoice_date": "11/05/2020",
+    "date_of_export": "11/05/2020"
+  },
+  "seller": {
+    "company_name": "Acme Industries",
+    "address": "9176 Riverside Drive\nPanama City, FL 32404",
+    "contact_name": "Lacey A Staley",
+    "phone_fax": "302-545-0909",
+    "email": "lacey@mail.com",
+    "country_of_export": "United States of America"
+  },
+  "buyer": {
+    "company_name": "Cala Foods",
+    "address": "52 Indian Summer Lane\nAustin, MN 55912",
+    "contact_name": "Andrew T McGuire",
+    "phone_fax": "480-577-9916",
+    "email": "andrew@mail.com",
+    "country_of_destination": "Singapore"
+  },
+  "products": [
+    {
+      "product": "Laser Mouse",
+      "quantity": "10",
+      "unit_price": "$950.00",
+      "amount": "$9,500.00"
+    },
+    {
+      "product": "Dual XL Monitors",
+      "quantity": "20",
+      "unit_price": "$150.00",
+      "amount": "$3,000.00"
+    },
+    {
+      "product": "Multi-jet Printer",
+      "quantity": "02",
+      "unit_price": "$150.00",
+      "amount": "$300.00"
+    }
+  ],
+  "summary": {
+    "subtotal": "$12,800.00",
+    "discount": "$300.00",
+    "tax": "$12.00",
+    "total_value": "$12,512.00"
+  },
+  "shipment": {
+    "total_weight": "23 Kg",
+    "shipment_terms": "DDU"
+  },
+  "vendor": {
+    "name": "Globex Corporation",
+    "address": "582 Grand Drive\nLithonia, GA 30038"
+  }
+}

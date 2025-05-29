@@ -1,0 +1,76 @@
+{
+  "table": [
+    {
+      "Month": "Jan",
+      "Budget": "5000",
+      "Actual": "4500",
+      "Variance": "-500"
+    },
+    {
+      "Month": "Feb",
+      "Budget": "4800",
+      "Actual": "5600",
+      "Variance": "800"
+    },
+    {
+      "Month": "Mar",
+      "Budget": "6000",
+      "Actual": "6200",
+      "Variance": "200"
+    },
+    {
+      "Month": "Apr",
+      "Budget": "5500",
+      "Actual": "5215",
+      "Variance": "-285"
+    },
+    {
+      "Month": "May",
+      "Budget": "5800",
+      "Actual": "6250",
+      "Variance": "450"
+    },
+    {
+      "Month": "Jun",
+      "Budget": "6500",
+      "Actual": "5900",
+      "Variance": "-600"
+    },
+    {
+      "Month": "Jul",
+      "Budget": "6000",
+      "Actual": "5825",
+      "Variance": "-175"
+    },
+    {
+      "Month": "Aug",
+      "Budget": "7000",
+      "Actual": "7680",
+      "Variance": "680"
+    },
+    {
+      "Month": "Sep",
+      "Budget": "6500",
+      "Actual": "6050",
+      "Variance": "-450"
+    },
+    {
+      "Month": "Oct",
+      "Budget": "6000",
+      "Actual": "6325",
+      "Variance": "325"
+    },
+    {
+      "Month": "Nov",
+      "Budget": "5900",
+      "Actual": "6100",
+      "Variance": "200"
+    },
+    {
+      "Month": "Dec",
+      "Budget": "5500",
+      "Actual": "5200",
+      "Variance": "-300"
+    }
+  ]
+}

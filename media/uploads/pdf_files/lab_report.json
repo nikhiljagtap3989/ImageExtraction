@@ -1,0 +1,91 @@
+[
+  {
+    "metadata": {
+      "phone_number": "0123456789",
+      "email": "drlogypathlab@drlogy.com",
+      "website": "www.drlogy.com"
+    },
+    "patient_details": {
+      "name": "Yash M. Patel",
+      "age": "21 Years",
+      "sex": "Male",
+      "pid": "555"
+    },
+    "sample_details": {
+      "sample_collected_at": "125, Shivam Bungalow, SG Road, Mumbai",
+      "ref_by": "Dr. Hiren Shah"
+    },
+    "test_results": {
+      "hemoglobin": {
+        "result": "12.5",
+        "reference_value": "13.0-17.0",
+        "unit": "g/dL"
+      },
+      "total_rbc_count": {
+        "result": "5.2",
+        "reference_value": "4.5-5.5",
+        "unit": "mill/cumm"
+      },
+      "packed_cell_volume": {
+        "result": "57.5",
+        "reference_value": "40-50",
+        "unit": "%"
+      },
+      "mean_corpuscular_volume": {
+        "result": "87.75",
+        "reference_value": "83-101",
+        "unit": "fL"
+      },
+      "mch": {
+        "result": "27.2",
+        "reference_value": "27-32",
+        "unit": "pg"
+      },
+      "mchc": {
+        "result": "32.8",
+        "reference_value": "32.5-34.5",
+        "unit": "g/dL"
+      },
+      "rdw": {
+        "result": "13.6",
+        "reference_value": "11.6-14.0",
+        "unit": "%"
+      },
+      "total_wbc_count": {
+        "result": "9000",
+        "reference_value": "4000-11000",
+        "unit": "cumm"
+      },
+      "neutrophils": {
+        "result": "60",
+        "reference_value": "50-62",
+        "unit": "%"
+      },
+      "lymphocytes": {
+        "result": "31",
+        "reference_value": "20-40",
+        "unit": "%"
+      },
+      "eosinophils": {
+        "result": "1",
+        "reference_value": "00-06",
+        "unit": "%"
+      },
+      "monocytes": {
+        "result": "7",
+        "reference_value": "00-10",
+        "unit": "%"
+      },
+      "basophils": {
+        "result": "1",
+        "reference_value": "00-02",
+        "unit": "%"
+      },
+      "platelet_count": {
+        "result": "150000",
+        "reference_value": "150000-410000",
+        "unit": "cumm"
+      }
+    }
+  }
+]
