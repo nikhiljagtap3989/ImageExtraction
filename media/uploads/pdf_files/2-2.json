@@ -1,0 +1,143 @@
+[
+  {
+    "Quotation No.": "QTN/24-25/0270"
+  },
+  {
+    "Coarse Aggregate (10 mm Single Sized)": [
+      {
+        "Sl. No.": "1",
+        "Description & Specification": "Sieve Analysis",
+        "Test Method": "IS 2386(Pt-1)",
+        "Turnaround Time in Days": "1",
+        "Sample Qty (Per Test)": "5 Kg",
+        "Sample Qty (Per Product)": null,
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "175",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "140",
+        "Product Total (Rs.)": null
+      },
+      {
+        "Sl. No.": "2",
+        "Description & Specification": "Specific Gravity",
+        "Test Method": "IS 2386(Pt-3)",
+        "Turnaround Time in Days": "3",
+        "Sample Qty (Per Test)": "2 Kg",
+        "Sample Qty (Per Product)": "25 Kg",
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "250",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "200",
+        "Product Total (Rs.)": "500"
+      },
+      {
+        "Sl. No.": "3",
+        "Description & Specification": "Water Absorption",
+        "Test Method": "IS 2386(Pt-3)",
+        "Turnaround Time in Days": "3",
+        "Sample Qty (Per Test)": "2 Kg",
+        "Sample Qty (Per Product)": null,
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "200",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "160",
+        "Product Total (Rs.)": null
+      }
+    ]
+  },
+  {
+    "Coarse Aggregate (20 mm Single Sized)": [
+      {
+        "Sl. No.": "1",
+        "Description & Specification": "Sieve Analysis",
+        "Test Method": "IS 2386(Pt-1)",
+        "Turnaround Time in Days": "1",
+        "Sample Qty (Per Test)": "5 Kg",
+        "Sample Qty (Per Product)": null,
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "175",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "140",
+        "Product Total (Rs.)": null
+      },
+      {
+        "Sl. No.": "2",
+        "Description & Specification": "Specific Gravity",
+        "Test Method": "IS 2386(Pt-3)",
+        "Turnaround Time in Days": "3",
+        "Sample Qty (Per Test)": "2 Kg",
+        "Sample Qty (Per Product)": "25 Kg",
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "250",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "200",
+        "Product Total (Rs.)": "500"
+      },
+      {
+        "Sl. No.": "3",
+        "Description & Specification": "Water Absorption",
+        "Test Method": "IS 2386(Pt-3)",
+        "Turnaround Time in Days": "3",
+        "Sample Qty (Per Test)": "2 Kg",
+        "Sample Qty (Per Product)": null,
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "200",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "160",
+        "Product Total (Rs.)": null
+      }
+    ]
+  },
+  {
+    "Fine Aggregate (Mechanical Testing)": [
+      {
+        "Sl. No.": "1",
+        "Description & Specification": "Sieve Analysis",
+        "Test Method": "IS 2386(Pt-1)",
+        "Turnaround Time in Days": "1",
+        "Sample Qty (Per Test)": "5 Kg",
+        "Sample Qty (Per Product)": null,
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "450",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "360",
+        "Product Total (Rs.)": null
+      },
+      {
+        "Sl. No.": "2",
+        "Description & Specification": "Specific Gravity",
+        "Test Method": "IS 2386(Pt-3)",
+        "Turnaround Time in Days": "3",
+        "Sample Qty (Per Test)": "2 Kg",
+        "Sample Qty (Per Product)": "20 Kg",
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "250",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "200",
+        "Product Total (Rs.)": "720"
+      },
+      {
+        "Sl. No.": "3",
+        "Description & Specification": "Water Absorption",
+        "Test Method": "IS 2386(Pt-3)",
+        "Turnaround Time in Days": "3",
+        "Sample Qty (Per Test)": "2 Kg",
+        "Sample Qty (Per Product)": null,
+        "UOM": "Per Test",
+        "Qty": "1",
+        "Unit Rate (Rs.)": "200",
+        "Discount": "20%",
+        "Discounted Rate (Rs.)": "160",
+        "Product Total (Rs.)": null
+      }
+    ]
+  }
+]

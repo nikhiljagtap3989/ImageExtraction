@@ -1,0 +1,487 @@
+[
+  {
+    "Branch": "MASTER OF BUSINESS ADMINISTRATION (REV.2019) - APRIL 2021",
+    "SeatNo": "54770",
+    "Centre": "0331",
+    "Student Name": "SURYAWANSHI SRUSHTI GAJANAN",
+    "Perm Reg No(PRN)": "2051900341",
+    "Mother Name": "USHA",
+    "Col/Inst.Name": "0331 AUDYOGIK SHIKSHAN MANDAL'S INSTITUTE OF BUSINESS MANAGEMENT & RESEARCH CHINCHWAD",
+    "SUBJECT": "MARKETING MANAGEMENT",
+    "SEM": "4",
+    "101": {
+      "SUBJECT NAME": "GC-01 MANAGERIAL ACCOUNTING",
+      "INT": "32",
+      "UEX": "24",
+      "TOT": "56",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "102": {
+      "SUBJECT NAME": "GC-02 ORGANIZATIONAL BEHAVIOUR",
+      "INT": "33",
+      "UEX": "26",
+      "TOT": "59",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "103": {
+      "SUBJECT NAME": "GC-03 ECONOMIC ANALYSIS FOR BUSINESS DECISIONS",
+      "INT": "32",
+      "UEX": "25",
+      "TOT": "57",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "104": {
+      "SUBJECT NAME": "GC-04 BUSINESS RESEARCH METHODS",
+      "INT": "29",
+      "UEX": "36",
+      "TOT": "65",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "105": {
+      "SUBJECT NAME": "GC-05 BASICS OF MARKETING",
+      "INT": "32",
+      "UEX": "33",
+      "TOT": "65",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "106": {
+      "SUBJECT NAME": "GC-06 DIGITAL BUSINESS",
+      "INT": "32",
+      "UEX": "27",
+      "TOT": "59",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "107": {
+      "SUBJECT NAME": "GE-UL-01 MANAGEMENT FUNDAMENTALS",
+      "INT": null,
+      "UEX": "27",
+      "TOT": "27",
+      "GRADE": "P2",
+      "GP": "D",
+      "CREDITS": "012"
+    },
+    "109": {
+      "SUBJECT NAME": "GE-UL-03 ENTREPRENEURSHIP DEVELOPMENT",
+      "INT": null,
+      "UEX": "30",
+      "TOT": "30",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "111": {
+      "SUBJECT NAME": "GE-UL-05 LEGAL ASPECTS OF BUSINESS",
+      "INT": null,
+      "UEX": "20",
+      "TOT": "20",
+      "GRADE": "P2",
+      "GP": "P",
+      "CREDITS": "008"
+    },
+    "115": {
+      "SUBJECT NAME": "GE-IL-03 SELLING & NEGOTIATION SKILLS LAB",
+      "INT": "30",
+      "UEX": null,
+      "TOT": "30",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "116": {
+      "SUBJECT NAME": "GE-IL-04 MS EXCEL",
+      "INT": "34",
+      "UEX": null,
+      "TOT": "34",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "118": {
+      "SUBJECT NAME": "GE-IL-06 MANAGING INNOVATION",
+      "INT": "32",
+      "UEX": null,
+      "TOT": "32",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "191": {
+      "SUBJECT NAME": "HUMAN RIGHTS - I",
+      "INT": "18",
+      "UEX": null,
+      "TOT": "18",
+      "GRADE": "P1",
+      "GP": "B!",
+      "CREDITS": null
+    },
+    "192": {
+      "SUBJECT NAME": "INTRODUCTION TO CYBER SECURITY - I",
+      "INT": "18",
+      "UEX": null,
+      "TOT": "18",
+      "GRADE": "P1",
+      "GP": "B!",
+      "CREDITS": null
+    },
+    "201": {
+      "SUBJECT NAME": "GC-07 MARKETING MANAGEMENT",
+      "INT": "30",
+      "UEX": "29",
+      "TOT": "59",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "202": {
+      "SUBJECT NAME": "GC-08 FINANCIAL MANAGEMENT",
+      "INT": "33",
+      "UEX": "31",
+      "TOT": "64",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "203": {
+      "SUBJECT NAME": "GC-09 HUMAN RESOURCES MANAGEMENT",
+      "INT": "31",
+      "UEX": "30",
+      "TOT": "61",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "204": {
+      "SUBJECT NAME": "GC-10 OPERATIONS & SUPPLY CHAIN MANAGEMENT",
+      "INT": "36",
+      "UEX": "32",
+      "TOT": "68",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "205 MKT": {
+      "SUBJECT NAME": "SC-MKT-01 MARKETING RESEARCH",
+      "INT": "31",
+      "UEX": "30",
+      "TOT": "61",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "206 MKT": {
+      "SUBJECT NAME": "SC-MKT-02 CONSUMER BEHAVIOUR",
+      "INT": "33",
+      "UEX": "31",
+      "TOT": "64",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "207": {
+      "SUBJECT NAME": "GE-UL-07 CONTEMPORARY FRAMEWORKS IN MANAGEMENT",
+      "INT": null,
+      "UEX": "27",
+      "TOT": "27",
+      "GRADE": "P2",
+      "GP": "D",
+      "CREDITS": "012"
+    },
+    "209": {
+      "SUBJECT NAME": "GE-UL-09 START UP AND NEW VENTURE MANAGEMENT",
+      "INT": null,
+      "UEX": "27",
+      "TOT": "27",
+      "GRADE": "P2",
+      "GP": "D",
+      "CREDITS": "012"
+    },
+    "211": {
+      "SUBJECT NAME": "GE-UL-11 BUSINESS, GOVERNMENT & SOCIETY",
+      "INT": null,
+      "UEX": "27",
+      "TOT": "27",
+      "GRADE": "P2",
+      "GP": "D",
+      "CREDITS": "012"
+    },
+    "214": {
+      "SUBJECT NAME": "GE-IL-09 INDUSTRY ANALYSIS & DESK RESEARCH",
+      "INT": "30",
+      "UEX": null,
+      "TOT": "30",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "217 MKT": {
+      "SUBJECT NAME": "SE-IL-MKT-01 INTEGRATED MARKETING COMMUNICATIONS",
+      "INT": "31",
+      "UEX": null,
+      "TOT": "31",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "218 MKT": {
+      "SUBJECT NAME": "SE-IL-MKT-02 PRODUCT & BRAND MANAGEMENT",
+      "INT": "33",
+      "UEX": null,
+      "TOT": "33",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "291": {
+      "SUBJECT NAME": "HUMAN RIGHTS - II",
+      "INT": "19",
+      "UEX": null,
+      "TOT": "19",
+      "GRADE": "P1",
+      "GP": "B!",
+      "CREDITS": null
+    },
+    "292": {
+      "SUBJECT NAME": "INTRODUCTION TO CYBER SECURITY - II",
+      "INT": "21",
+      "UEX": null,
+      "TOT": "21",
+      "GRADE": "P1",
+      "GP": "A !",
+      "CREDITS": null
+    },
+    "301": {
+      "SUBJECT NAME": "GC-11 STRATEGIC MANAGEMENT",
+      "INT": "31",
+      "UEX": "25",
+      "TOT": "56",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "302": {
+      "SUBJECT NAME": "GC-12 DECISION SCIENCE",
+      "INT": "32",
+      "UEX": "24",
+      "TOT": "56",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "303": {
+      "SUBJECT NAME": "GC-13 SUMMER INTERNSHIP PROJECT",
+      "INT": "35",
+      "UEX": "38",
+      "TOT": "73",
+      "GRADE": "P6",
+      "GP": "B",
+      "CREDITS": "048"
+    },
+    "304 HR": {
+      "SUBJECT NAME": "SC-HRM-03 STRATEGIC HUMAN RESOURCE MANAGEMENT",
+      "INT": "34",
+      "UEX": "32",
+      "TOT": "66",
+      "GRADE": "P3",
+      "GP": "C",
+      "CREDITS": "021"
+    },
+    "305 MKT": {
+      "SUBJECT NAME": "SC-MKT-04 SALES & DISTRIBUTION MANAGEMENT",
+      "INT": "32",
+      "UEX": "25",
+      "TOT": "57",
+      "GRADE": "P3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "306": {
+      "SUBJECT NAME": "GE-UL-13 INTERNATIONAL BUSINESS ECONOMICS",
+      "INT": null,
+      "UEX": "29",
+      "TOT": "29",
+      "GRADE": "P2",
+      "GP": "D",
+      "CREDITS": "012"
+    },
+    "310": {
+      "SUBJECT NAME": "GE-UL-17 CORPORATE GOVERNANCE",
+      "INT": null,
+      "UEX": "24",
+      "TOT": "24",
+      "GRADE": "P2",
+      "GP": "E",
+      "CREDITS": "010"
+    },
+    "311": {
+      "SUBJECT NAME": "GE-UL-18 MANAGEMENT OF NON-PROFIT ORGANIZATIONS",
+      "INT": null,
+      "UEX": "37",
+      "TOT": "37",
+      "GRADE": "P2",
+      "GP": "B",
+      "CREDITS": "016"
+    },
+    "312 HRM": {
+      "SUBJECT NAME": "SE-IL-HRM-07 TALENT MANAGEMENT",
+      "INT": "34",
+      "UEX": null,
+      "TOT": "34",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "313 MKT": {
+      "SUBJECT NAME": "SE-IL-MKT-08 INTERNATIONAL MARKETING",
+      "INT": "33",
+      "UEX": null,
+      "TOT": "33",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "314 MKT": {
+      "SUBJECT NAME": "SE-IL-MKT-09 DIGITAL MARKETING - II",
+      "INT": "32",
+      "UEX": null,
+      "TOT": "32",
+      "GRADE": "P2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "392": {
+      "SUBJECT NAME": "INTRODUCTION TO CYBER SECURITY - III",
+      "INT": "19",
+      "UEX": null,
+      "TOT": "19",
+      "GRADE": "P1",
+      "GP": "B!",
+      "CREDITS": null
+    },
+    "394": {
+      "SUBJECT NAME": "SKILL DEVELOPMENT - I",
+      "INT": "40",
+      "UEX": null,
+      "TOT": "40",
+      "GRADE": "P2",
+      "GP": "A!",
+      "CREDITS": null
+    },
+    "395": {
+      "SUBJECT NAME": "INTRODUCTION TO CONSTITUTION",
+      "INT": "38",
+      "UEX": null,
+      "TOT": "38",
+      "GRADE": "P2",
+      "GP": "B!",
+      "CREDITS": null
+    },
+    "401": {
+      "SUBJECT NAME": "GC-14 ENTERPRISE PERFORMANCE MANAGEMENT",
+      "INT": "23",
+      "UEX": "35",
+      "TOT": "58",
+      "GRADE": "*3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "402": {
+      "SUBJECT NAME": "GC-15 INDIAN ETHOS & BUSINESS ETHICS",
+      "INT": "21",
+      "UEX": "32",
+      "TOT": "53",
+      "GRADE": "* 3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "403 HR": {
+      "SUBJECT NAME": "SC-HRM-05 ORGANIZATIONAL DIAGNOSIS & DEVELOPMENT",
+      "INT": "25",
+      "UEX": "24",
+      "TOT": "49",
+      "GRADE": "*3",
+      "GP": "E",
+      "CREDITS": "015"
+    },
+    "404 MKT": {
+      "SUBJECT NAME": "SC-MKT-06 MARKETING STRATEGY",
+      "INT": "25",
+      "UEX": "34",
+      "TOT": "59",
+      "GRADE": "*3",
+      "GP": "D",
+      "CREDITS": "018"
+    },
+    "405": {
+      "SUBJECT NAME": "GE-UL-19 GLOBAL STRATEGIC MANAGEMENT",
+      "INT": null,
+      "UEX": "32",
+      "TOT": "32",
+      "GRADE": "* 2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "408": {
+      "SUBJECT NAME": "GE-UL-22 CORPORATE SOCIAL RESPOSIBILITY & SUSTAINA",
+      "INT": null,
+      "UEX": "45",
+      "TOT": "45",
+      "GRADE": "* 2",
+      "GP": "\u039f",
+      "CREDITS": "020"
+    },
+    "412 MKT": {
+      "SUBJECT NAME": "SE-IL-MKT-16 RETAIL MARKETING",
+      "INT": "24",
+      "UEX": null,
+      "TOT": "24",
+      "GRADE": "* 2",
+      "GP": "E",
+      "CREDITS": "010"
+    },
+    "414 HRM": {
+      "SUBJECT NAME": "SE-IL-HRM-20 LEADERSHIP & SUCCESSION PLANNING",
+      "INT": "34",
+      "UEX": null,
+      "TOT": "34",
+      "GRADE": "* 2",
+      "GP": "C",
+      "CREDITS": "014"
+    },
+    "492": {
+      "SUBJECT NAME": "INTRODUCTION TO CYBER SECURITY - IV",
+      "INT": "19",
+      "UEX": null,
+      "TOT": "19",
+      "GRADE": "* 1",
+      "GP": "B!",
+      "CREDITS": null
+    },
+    "494": {
+      "SUBJECT NAME": "SKILL DEVELOPMENT - II",
+      "INT": "30",
+      "UEX": null,
+      "TOT": "30",
+      "GRADE": "* 2",
+      "GP": "C!",
+      "CREDITS": null
+    },
+    "GRAND TOTAL(OUT OF3200)": "1937",
+    "SGPA": "(1) 6.33 (2) 6.70 (3) 6.77 (4) 6.35",
+    "GRADE POINTS": "721",
+    "TOTAL": "CREDITS 110",
+    "TOT.MARKS": "1937/3200 (60.53%) CGPA: 6.550 RESULT: HIGHER SECOND CLASS",
+    "RESULT DATE": "12 November 2021"
+  }
+]

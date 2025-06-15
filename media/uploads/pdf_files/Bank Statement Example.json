@@ -1,0 +1,169 @@
+[
+  {
+    "Account Number": "1111111",
+    "Sort Code": "16-10-00",
+    "BIC": "RBOSGB2L",
+    "IBAN": "GB11RBOS 1610 0011 1111 11",
+    "Account Holder": "MR TEST TESTER",
+    "Account Type": "CURRENT ACCOUNT",
+    "Branch Details": {
+      "Address": [
+        "ANY BRACH",
+        "ANY STREET",
+        "ANY TOWN",
+        "AN1 TWN"
+      ]
+    },
+    "Your Details": {
+      "Name": "MR T TESTER",
+      "Address": [
+        "1 TEST STREET",
+        "TEST TOWN",
+        "TE5 7ER"
+      ]
+    },
+    "Period": "22 Oct 2014 to 21 Dec 2014",
+    "Previous Balance": "\u00a31803.90",
+    "Paid Out": "\u00a32,684.10",
+    "Paid In": "\u00a32,180.40",
+    "New Balance": "\u00a3300.20",
+    "Transactions": [
+      {
+        "Date": "22 Oct 2014",
+        "Type": "AUTOMATED PAY IN",
+        "Description": "650274051211-CHB",
+        "Paid In": null,
+        "Paid Out": "190.40",
+        "Balance": "1803.9"
+      },
+      {
+        "Date": "22 Oct 2014",
+        "Type": "DIGITAL BANKING",
+        "Description": "CALL REF. NO. 3442, FROM A/C 22222222",
+        "Paid In": null,
+        "Paid Out": "140.00",
+        "Balance": "1613.5"
+      },
+      {
+        "Date": "24 Oct 2014",
+        "Type": "Faster Payment",
+        "Description": "Amazon",
+        "Paid In": null,
+        "Paid Out": "132.30",
+        "Balance": "1473.5"
+      },
+      {
+        "Date": "24 Oct 2014",
+        "Type": "BACS",
+        "Description": "Tebay Trading Co.",
+        "Paid In": null,
+        "Paid Out": "515.22",
+        "Balance": "1341.2"
+      },
+      {
+        "Date": "25 Oct 2014",
+        "Type": "Faster Payment",
+        "Description": "Morrisons Petrol",
+        "Paid In": null,
+        "Paid Out": "80.00",
+        "Balance": "825.98"
+      },
+      {
+        "Date": "25 Oct 2014",
+        "Type": "BACS",
+        "Description": "Business Loan",
+        "Paid In": "20,000.00",
+        "Paid Out": null,
+        "Balance": "745.98"
+      },
+      {
+        "Date": "26 Oct 2014",
+        "Type": "BACS",
+        "Description": "James White Media",
+        "Paid In": null,
+        "Paid Out": "2,461.55",
+        "Balance": "20745.98"
+      },
+      {
+        "Date": "27 Oct 2014",
+        "Type": "Faster Payment",
+        "Description": "ATM High Street",
+        "Paid In": null,
+        "Paid Out": "100.00",
+        "Balance": "18284.43"
+      },
+      {
+        "Date": "01 Nov 2014",
+        "Type": "BACS",
+        "Description": "Acorn Advertising Studies",
+        "Paid In": null,
+        "Paid Out": "150.00",
+        "Balance": "18184.43"
+      },
+      {
+        "Date": "01 Nov 2014",
+        "Type": "BACS",
+        "Description": "Marriott Hotel",
+        "Paid In": null,
+        "Paid Out": "177.00",
+        "Balance": "18034.43"
+      },
+      {
+        "Date": "01 Nov 2014",
+        "Type": "Faster Payment",
+        "Description": "Abellio Scotrail Ltd",
+        "Paid In": null,
+        "Paid Out": "122.22",
+        "Balance": "17857.43"
+      },
+      {
+        "Date": "01 Nov 2014",
+        "Type": "CHQ",
+        "Description": "Cheque 0000234",
+        "Paid In": null,
+        "Paid Out": "1,200.00",
+        "Balance": "17735.21"
+      },
+      {
+        "Date": "01 Dec 2014",
+        "Type": "Int. Bank",
+        "Description": "Interest Paid",
+        "Paid In": "9.33",
+        "Paid Out": null,
+        "Balance": "16535.21"
+      },
+      {
+        "Date": "01 Dec 2014",
+        "Type": "DD",
+        "Description": "OVO Energy",
+        "Paid In": null,
+        "Paid Out": "2470.00",
+        "Balance": "16544.54"
+      },
+      {
+        "Date": "21 Dec 2014",
+        "Type": "BACS",
+        "Description": "Various Payment",
+        "Paid In": null,
+        "Paid Out": "10,526.40",
+        "Balance": "14074.54"
+      },
+      {
+        "Date": "21 Dec 2014",
+        "Type": "BACS",
+        "Description": "HMRC",
+        "Paid In": "1,000.00",
+        "Paid Out": null,
+        "Balance": "3548.14"
+      },
+      {
+        "Date": "21 Dec 2014",
+        "Type": "DD",
+        "Description": "DVLA",
+        "Paid In": null,
+        "Paid Out": "280.00",
+        "Balance": "2548.14"
+      }
+    ]
+  }
+]

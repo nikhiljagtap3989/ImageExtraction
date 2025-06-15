@@ -121,6 +121,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
 }
 
 SIMPLE_JWT = {
@@ -174,6 +177,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
+
+
+# settings.py
+AUTH_USER_MODEL = 'authentication.CustomUser'
+
 #CORS_ALLOW_ALL_ORIGINS = True
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:8080",
@@ -204,3 +212,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 # ]
 
 X_FRAME_OPTIONS = 'ALLOWALL'
+
+FERNET_KEY = b'0JrZYrB4GSD1agNWN_wZGJn8dEUmuXOb-02rLyubWDY='  
+

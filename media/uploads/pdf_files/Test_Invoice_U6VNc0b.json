@@ -1,0 +1,13 @@
+{
+  "invoice_number": "0001",
+  "date": "2025-05-19",
+  "bill_to": "John Doe",
+  "items": [
+    {
+      "item": "Test Service",
+      "quantity": "1",
+      "price": "$100.00"
+    }
+  ],
+  "total": "$100.00"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "invoice_date": "28/02/2013",
+    "payee_name": "Joy Johnson",
+    "amount_in_words": "Fifteen Thousand Only",
+    "amount": "15,000/-",
+    "account_number": "1234 4321 0123",
+    "bank_name": "SUM BANK",
+    "bank_address": "Bank Road, Bank Town Bank complex - 000 012",
+    "bank_ifsc": "0001 2312 3412"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "invoice_number": "1962",
+  "invoice_date": "30/11/2024",
+  "seller": "\u092e\u093e\u0901 \u0938\u0928\u094d\u0924\u094b\u0937\u0940 \u092c\u0940\u091c \u090f\u091c\u0947\u0928\u094d\u0938\u0940",
+  "seller_address": "\u092c\u0930\u0924\u0930\u093e, \u092a\u0902\u091a\u093e\u092f\u0924 \u0918\u0930 \u0915\u0947 \u0938\u093e\u092e\u0928\u0947, \u0915\u094b\u091f\u0932\u093e \u0930\u094b\u0921, \u092b\u093f\u0930\u094b\u091c\u093e\u092c\u093e\u0926 - 283 203",
+  "seller_phone": "9760584150, 9720082589",
+  "buyer": "MAHYCO PVT LTD.",
+  "items": [
+    {
+      "id": "1",
+      "description": "500m \u0998\u09c1\u09ae\u0995\u09c7 \u09b8\u0982",
+      "amount": "990"
+    },
+    {
+      "id": "2",
+      "description": "5 \u091c\u0947\u0920\u093f\u0928 -",
+      "amount": "400"
+    },
+    {
+      "description": "5 \u091c\u0947\u0920\u093f\u0928 -",
+      "amount": "1050"
+    },
+    {
+      "id": "3",
+      "description": "1.9. \u0913\u0915\u093e\u0937",
+      "amount": "100"
+    },
+    {
+      "id": "4",
+      "description": "50m \u09b8\u09cd\u0995\u09bf\u09b0",
+      "amount": "125"
+    },
+    {
+      "id": "6",
+      "description": "- 30m \u09b8\u09bf\u093f\u0995\u09c7\u09a8\u09cd\u09a6\u09cb,",
+      "amount": "350"
+    },
+    {
+      "id": "7",
+      "description": "- 15%. \u09b2\u093e\u0928\u09be",
+      "amount": "450"
+    }
+  ],
+  "total_amount": "3465"
+}

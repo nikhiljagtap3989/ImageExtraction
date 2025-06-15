@@ -1,0 +1,140 @@
+[
+  {
+    "metadata": {
+      "invoice_number": "123100401",
+      "invoice_date": "1. M\u00e4rz 2024",
+      "invoice_period_start": "01.02.2024",
+      "invoice_period_end": "29.02.2024",
+      "customer_number": "12345",
+      "vat_number": "DE199378386"
+    },
+    "seller_information": {
+      "company_name": "CPB SOFTWARE (GERMANY) GMBH",
+      "address": "Im Bruch 3, 63897 Miltenberg",
+      "contact_name": "Stefanie M\u00fcller",
+      "phone_number": "+49 9371 9786-0",
+      "email": "germany@cpb-software.com",
+      "website": "www.cpb-software.com"
+    },
+    "buyer_information": {
+      "company_name": "Musterkunde AG",
+      "contact_name": "Mr. John Doe",
+      "address": "Musterstr. 23, 12345 Musterstadt"
+    },
+    "line_items": [
+      {
+        "description": "Basic Fee wmView",
+        "quantity": 1,
+        "amount_without_vat": "130,00 \u20ac",
+        "total_amount": "130,00 \u20ac"
+      },
+      {
+        "description": "Basis fee for additional user accounts",
+        "quantity": 0,
+        "amount_without_vat": "10,00 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Basic Fee wmPos",
+        "quantity": 0,
+        "amount_without_vat": "50,00 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Basic Fee wmGuide",
+        "quantity": 0,
+        "amount_without_vat": "1.000,00 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Change of user accounts",
+        "quantity": 0,
+        "amount_without_vat": "10,00 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee T1",
+        "quantity": 14,
+        "amount_without_vat": "0,58 \u20ac",
+        "total_amount": "8,12 \u20ac"
+      },
+      {
+        "description": "Transaction Fee T2",
+        "quantity": 0,
+        "amount_without_vat": "0,70 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee T3",
+        "quantity": 162,
+        "amount_without_vat": "1,50 \u20ac",
+        "total_amount": "243,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee T4",
+        "quantity": 0,
+        "amount_without_vat": "0,50 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee T5",
+        "quantity": 0,
+        "amount_without_vat": "0,80 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee T6",
+        "quantity": 0,
+        "amount_without_vat": "1,80 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee G1",
+        "quantity": 0,
+        "amount_without_vat": "0,30 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee G2",
+        "quantity": 0,
+        "amount_without_vat": "0,30 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee G3",
+        "quantity": 0,
+        "amount_without_vat": "0,40 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee G4",
+        "quantity": 0,
+        "amount_without_vat": "0,40 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee G5",
+        "quantity": 0,
+        "amount_without_vat": "0,30 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      },
+      {
+        "description": "Transaction Fee G6",
+        "quantity": 0,
+        "amount_without_vat": "0,30 \u20ac",
+        "total_amount": "0,00 \u20ac"
+      }
+    ],
+    "totals": {
+      "subtotal": "381,12 \u20ac",
+      "vat_percentage": "19%",
+      "vat_amount": "72,41 \u20ac",
+      "gross_amount": "453,53 \u20ac"
+    },
+    "payment_information": {
+      "payment_terms": "Immediate payment without discount. Any bank charges must be paid by the invoice recipient.",
+      "iban": "DE29 1234 5678 9012 3456 78",
+      "bic": "GENODE51MIC"
+    }
+  }
+]

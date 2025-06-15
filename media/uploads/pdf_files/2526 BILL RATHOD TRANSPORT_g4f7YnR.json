@@ -1,0 +1,32 @@
+[
+  {
+    "invoice_number": "962",
+    "date": "13/04/05",
+    "consignor": "\u0930\u093e\u092e\u0941\u0916\u0930 \u0918\u0941\u0930\u0924\u094d\u0930\u0940\u092a\u093e\u091f\u0940\u0926\u093e\u0930 \u0926\u094b\u092e\u094b\u091f",
+    "consignee": "Manyco put ltd avigals",
+    "delivery_at": "untiesco \u092c\u094b\u0932\u0928\u093e\u092e",
+    "truck_number": "MpogHG 5119",
+    "total": "22471",
+    "line_items": [
+      {
+        "item_number": "1",
+        "kind_of_variety": "W-7-42V",
+        "name_of_grower": "RAMESHVAR DHURAJI",
+        "village": "DALOT",
+        "batch_number": "100217",
+        "number_of_boys": "300",
+        "amount": "165.00"
+      },
+      {
+        "item_number": "2",
+        "kind_of_variety": "-",
+        "name_of_grower": "-",
+        "village": "-",
+        "batch_number": "1002178",
+        "number_of_boys": "800",
+        "amount": "165010"
+      }
+    ],
+    "subtotal": "33000"
+  }
+]
