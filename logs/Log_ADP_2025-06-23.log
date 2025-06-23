@@ -477,3 +477,5 @@
 2025-06-23 10:49:31,706 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTE7iCDc-5AD8hS9w8-7yfWvmSzJDpEfdM-JFMHBr03fIAKjrIboJbwtKSmGz_qbFbQHtbyjjTp0ms2n_yyg7mfCkw==
 2025-06-23 10:49:31,707 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 176
 2025-06-23 10:49:31,719 | INFO     | ImageApp1.views | get                  | Line 103  | Document 176 retrieved successfully
+2025-06-23 11:33:44,176 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageExtraction\settings.py changed, reloading.
+2025-06-23 11:33:48,182 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
