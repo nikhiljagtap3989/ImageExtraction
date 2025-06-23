@@ -86,7 +86,7 @@ ROOT_URLCONF = "ImageExtraction.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -214,4 +214,11 @@ CORS_ALLOW_ALL_ORIGINS = True
 X_FRAME_OPTIONS = 'ALLOWALL'
 
 FERNET_KEY = b'0JrZYrB4GSD1agNWN_wZGJn8dEUmuXOb-02rLyubWDY='  
+
+
+# #Twilio Integrate
+# TWILIO_ACCOUNT_SID ='AC6e645a1a2ad7e90e3aa14f72a3ced7a1'
+# TWILIO_AUTH_TOKEN ='827b04b947103ba72467edccac22bcb5'
+# TWILIO_FROM_WHATSAPP = 'whatsapp:+14344742171'  # Twilio sandbox number
+# ADMIN_PHONE_NUMBER = 'whatsapp:+917757935044'
 

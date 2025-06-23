@@ -1,0 +1,79 @@
+2025-06-20 12:28:10,044 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:28:34,793 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:29:07,285 | INFO     | ImageApp1.views | post                 | Line 529  | Upload request received
+2025-06-20 12:30:17,148 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:30:20,950 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:33:52,477 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:33:54,347 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:34:51,140 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:34:52,966 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:37:45,082 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:37:46,981 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:38:40,665 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:38:42,446 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:40:59,644 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:41:01,661 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:43:36,629 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:43:38,428 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:47:32,242 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:47:34,084 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:50:00,856 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:50:02,902 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:52:14,072 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageExtraction\logger.py changed, reloading.
+2025-06-20 12:52:15,939 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:54:53,146 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:54:54,984 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:56:49,789 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:56:51,560 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:57:23,211 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:57:25,123 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 12:58:54,238 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 12:58:56,074 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:00:50,033 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:00:51,691 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:01:05,427 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:01:07,224 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:02:53,378 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:02:55,227 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:03:06,683 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:03:08,611 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:07:34,973 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\models.py changed, reloading.
+2025-06-20 13:07:36,838 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:08:46,792 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:09:49,669 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:09:51,414 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:12:09,549 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:12:11,409 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:28:53,402 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:28:55,253 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:29:32,957 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:29:34,610 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:29:59,012 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:30:00,879 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:31:17,326 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\models.py changed, reloading.
+2025-06-20 13:32:03,140 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:32:49,612 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:33:46,781 | INFO     | ImageApp1.views | post                 | Line 568  | Upload request received
+2025-06-20 13:33:50,001 | ERROR    | ImageApp1.views | post                 | Line 770  | 500
+2025-06-20 13:33:50,003 | ERROR    | ImageApp1.views | post                 | Line 771  | Error while processing document.
+2025-06-20 13:33:50,029 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py, line 717: input_tokens = response.usage_metadata.get("prompt_token_count", 0)
+2025-06-20 13:33:50,030 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Sujata\Python39\lib\site-packages\proto\message.py, line 877: raise AttributeError(
+2025-06-20 13:33:50,033 | ERROR    |  django.request | log_response         | Line 241  | Internal Server Error: /IDA/upload/
+2025-06-20 13:42:10,030 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:47:06,501 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:47:14,913 | INFO     | ImageApp1.views | post                 | Line 568  | Upload request received
+2025-06-20 13:47:17,913 | INFO     |            root | post                 | Line 738  | Input tokens: 1563, Output tokens: 231
+2025-06-20 13:47:23,725 | ERROR    | ImageApp1.views | post                 | Line 787  | 500
+2025-06-20 13:47:23,725 | ERROR    | ImageApp1.views | post                 | Line 788  | Error while processing document.
+2025-06-20 13:47:23,799 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py, line 767: doc = Document.objects.create(
+2025-06-20 13:47:23,800 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Sujata\Python39\lib\site-packages\django\db\models\manager.py, line 87: return getattr(self.get_queryset(), name)(*args, **kwargs)
+2025-06-20 13:47:23,802 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Sujata\Python39\lib\site-packages\django\db\models\query.py, line 656: obj = self.model(**kwargs)
+2025-06-20 13:47:23,802 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Sujata\Python39\lib\site-packages\django\db\models\base.py, line 567: raise TypeError(
+2025-06-20 13:47:23,804 | ERROR    |  django.request | log_response         | Line 241  | Internal Server Error: /IDA/upload/
+2025-06-20 13:49:17,291 | INFO     | ImageApp1.views | post                 | Line 568  | Upload request received
+2025-06-20 13:49:11,475 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-20 13:49:55,555 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-20 13:50:02,451 | INFO     | ImageApp1.views | post                 | Line 568  | Upload request received
+2025-06-20 13:50:05,473 | INFO     |            root | post                 | Line 738  | Input tokens: 1563, Output tokens: 237
+2025-06-20 13:50:10,488 | INFO     | ImageApp1.views | post                 | Line 779  | Document processed and saved successfully. Document ID: gAAAAABoVWcSiGiPSJ2DCPGjCAeDS4cQhP49xmeJnl4JGHgNESoZdNQBRpT9UiO756REWY32bCM8aCZvwqK7ARPc04AkVt8Zdg==
+2025-06-21 01:40:32,859 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\authentication\views.py changed, reloading.

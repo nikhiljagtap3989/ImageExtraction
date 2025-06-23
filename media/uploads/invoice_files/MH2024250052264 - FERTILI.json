@@ -1,0 +1,55 @@
+{
+  "invoice_number": "1962",
+  "invoice_date": "30/11/2024",
+  "seller": "माँ सन्तोषी बीज एजेन्सी",
+  "seller_address": "बरतरा, पंचायत घर के सामने, कोटला रोड, फिरोजाबाद - 283 203",
+  "seller_mobile": [
+    "9760584150",
+    "9720082589"
+  ],
+  "buyer": "MAHYCO PVT LTD.",
+  "line_items": [
+    {
+      "item_number": "1",
+      "description": "500ml ঘুমকে সং",
+      "amount": "990"
+    },
+    {
+      "item_number": "2",
+      "description": "5 जेठिन",
+      "amount": "400"
+    },
+    {
+      "item_number": "2",
+      "description": "5 जेठिन",
+      "amount": "1050"
+    },
+    {
+      "item_number": "3",
+      "description": "1. p. ओकाष",
+      "amount": "100"
+    },
+    {
+      "item_number": "4",
+      "description": "50ml स्किर",
+      "amount": "125"
+    },
+    {
+      "item_number": "6",
+      "description": "100ml चेलेन्दार",
+      "amount": "350"
+    },
+    {
+      "item_number": "6",
+      "description": "30ml एलिवेनटो",
+      "amount": "450"
+    },
+    {
+      "item_number": "7",
+      "description": "-15% लाला",
+      "amount": null
+    }
+  ],
+  "total_amount": "3465",
+  "payment_status": "Paid"
+}

@@ -1,59 +1,128 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from django.contrib.auth import authenticate
+# from rest_framework.views import APIView
+# from rest_framework.response import Response
+# from rest_framework import status
+# from django.contrib.auth import authenticate
 
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.views import APIView
-from .serializers import LoginSerializer,UserSerializer,ProfileSerializer
-from rest_framework_simplejwt.tokens import RefreshToken
+# from rest_framework.response import Response
+# from rest_framework import status
+# from rest_framework.views import APIView
+# from .serializers import LoginSerializer,UserSerializer,ProfileSerializer
+# from rest_framework_simplejwt.tokens import RefreshToken
 
-from rest_framework import generics
-from rest_framework.permissions import AllowAny
+# from rest_framework import generics
+# from rest_framework.permissions import AllowAny
 
       
 
-from django.contrib.auth.models import User   
-from authentication.models import CustomUser 
+# from django.contrib.auth.models import User   
+# from authentication.models import CustomUser 
+# from rest_framework.permissions import AllowAny
+
+
+
+
+# import logging
+# from django.contrib.auth import authenticate
+# from rest_framework.permissions import AllowAny
+# from rest_framework.views import APIView
+# from rest_framework.response import Response
+# from rest_framework import status
+# from rest_framework_simplejwt.tokens import RefreshToken
 
 
 
 
 
+# from rest_framework.response import Response
+# from rest_framework import status
+# from rest_framework.permissions import AllowAny
+# from rest_framework.views import APIView
+# from django.contrib.auth import get_user_model
+# from .serializers import UserSerializer
+# # from .tokens import get_tokens_for_user  # Assuming you have this method
 
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.permissions import AllowAny
+
+
+
+
+# import logging
+# from ImageExtraction.logger import log_exception  # Use actual project name
+
+
+
+
+import logging
+from django.contrib.auth import authenticate, get_user_model
 from rest_framework.views import APIView
-from django.contrib.auth import get_user_model
-from .serializers import UserSerializer
-# from .tokens import get_tokens_for_user  # Assuming you have this method
+from rest_framework.response import Response
+from rest_framework import status, generics
+from rest_framework.permissions import AllowAny
+from rest_framework_simplejwt.tokens import RefreshToken
+
+from authentication.models import CustomUser
+from .serializers import LoginSerializer, UserSerializer, ProfileSerializer
+from ImageExtraction.logger import log_exception  # Use actual project path
+
+
+logger = logging.getLogger(__name__)
+
+
+
+CustomUser = get_user_model()
+class CreateUserAPIView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        logger.info("User registration request received.")
+        try:
+            serializer = UserSerializer(data=request.data)
+
+            if not serializer.is_valid():
+                logger.warning("Invalid user data received during registration.")
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+            email = serializer.validated_data['email']
+            username = serializer.validated_data['username']
+
+            # Check for duplicate email
+            if CustomUser.objects.filter(email=email).exists():
+                logger.warning(f"Email already registered: {email}")
+                return Response({'message': 'Email already registered'}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Check for duplicate username
+            if CustomUser.objects.filter(username=username).exists():
+                logger.warning(f"Username already taken: {username}")
+                return Response({'message': 'Username already taken'}, status=status.HTTP_400_BAD_REQUEST)
+
+            password = serializer.validated_data['password']
+            phone_number = serializer.validated_data['phone_number']
+
+            # Create the user
+            user = CustomUser.objects.create_user(username=username, email=email, password=password)
+            user.phone_number = phone_number
+            user.save()
+
+            token = get_tokens_for_user(user)
+            logger.info(f"User created successfully: {username} (Email: {email})")
+
+            return Response({
+                'token': token,
+                'message': 'User created successfully'
+            }, status=status.HTTP_201_CREATED)
+
+        except Exception:
+            logger.error("Error occurred during user registration.")
+            log_exception(logger)
+            return Response(
+                {"message": "An unexpected error occurred. Please try again later."},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+
 
 class UserListView(generics.ListAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
-
-
-# class CreateUserAPIView(APIView):
-#     permission_classes = [AllowAny]
-#     def post(self, request):
-#         serializer = UserSerializer(data=request.data)
-#         if serializer.is_valid():
-#             username = serializer.validated_data['username']
-#             email = serializer.validated_data['email']
-#             password = serializer.validated_data['password']
-#             phone_number = serializer.validated_data['phone_number']
-#             user = CustomUser.objects.create_user(username=username, email=email, password=password)
-          
-#             token = get_tokens_for_user(user)
-            
-            
-#             return Response({'token': token, 'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
-#         else:
-#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
-
 
 
 
@@ -66,32 +135,6 @@ def get_tokens_for_user(user):
         'access': str(refresh.access_token),
     }
 
-# class LoginView(APIView):
-#     def post(self, request):
-#         serializer = LoginSerializer(data=request.data)
-#         if serializer.is_valid():
-#             username = serializer.validated_data['username']
-#             password = serializer.validated_data['password']
-
-#             user = authenticate(request, username=username, password=password)
-
-#             #username="john", password="secret"
-#             #user = authenticate(request, email=email, password=password)
-#             if user is not None:
-#                 # User authenticated
-
-#                 refresh = RefreshToken.for_user(user)
-         
-#                 #token = get_tokens_for_user(user)
-#                 #return Response({'token': token, 'username': username , 'message': 'Login successful'}, status=status.HTTP_200_OK)
-#                 return Response({ 'refresh': str(refresh),'access': str(refresh.access_token) , 'username': username , 'message': 'Login successful'}, status=status.HTTP_200_OK)
-#             else:
-#                 # Invalid credentials
-#                 return Response({'message': 'Invalid email or password'}, status=status.HTTP_401_UNAUTHORIZED)
-#         else:
-#             # Invalid input data
-#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
 
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
 class ProfileDetailsView(APIView):
@@ -104,14 +147,20 @@ class ProfileDetailsView(APIView):
 
 
 
-from rest_framework.permissions import AllowAny
 
 class LoginView(APIView):
-    permission_classes = [AllowAny]  # 👈 Add this line
+    permission_classes = [AllowAny]
 
     def post(self, request):
-        serializer = LoginSerializer(data=request.data)
-        if serializer.is_valid():
+        logger.info("Login attempt received.")
+
+        try:
+            serializer = LoginSerializer(data=request.data)
+
+            if not serializer.is_valid():
+                logger.warning("Login failed: invalid data.")
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
             username = serializer.validated_data['username']
             password = serializer.validated_data['password']
 
@@ -119,55 +168,91 @@ class LoginView(APIView):
 
             if user is not None:
                 refresh = RefreshToken.for_user(user)
+
+                logger.info(f"Login successful for user: {username}")
                 return Response({
                     'refresh': str(refresh),
                     'access': str(refresh.access_token),
                     'username': username,
-                    'id': user.id,       
-                    'role': user.role,            
+                    'id': user.id,
+                    'role': user.role,
                     'message': 'Login successful'
                 }, status=status.HTTP_200_OK)
             else:
+                logger.warning(f"Login failed for username: {username} — invalid credentials.")
                 return Response({'message': 'Invalid email or password'}, status=status.HTTP_401_UNAUTHORIZED)
-        else:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        except Exception:
+            logger.error("Unexpected error occurred during login.")
+            log_exception(logger)
+            return Response(
+                {'message': 'An unexpected error occurred during login. Please try again later.'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+
+# class LoginView(APIView):
+#     permission_classes = [AllowAny]  # 👈 Add this line
+
+#     def post(self, request):
+#         serializer = LoginSerializer(data=request.data)
+#         if serializer.is_valid():
+#             username = serializer.validated_data['username']
+#             password = serializer.validated_data['password']
+
+#             user = authenticate(request, username=username, password=password)
+
+#             if user is not None:
+#                 refresh = RefreshToken.for_user(user)
+#                 return Response({
+#                     'refresh': str(refresh),
+#                     'access': str(refresh.access_token),
+#                     'username': username,
+#                     'id': user.id,       
+#                     'role': user.role,            
+#                     'message': 'Login successful'
+#                 }, status=status.HTTP_200_OK)
+#             else:
+#                 return Response({'message': 'Invalid email or password'}, status=status.HTTP_401_UNAUTHORIZED)
+#         else:
+#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 
 
-CustomUser = get_user_model()
 
-class CreateUserAPIView(APIView):
-    permission_classes = [AllowAny]
 
-    def post(self, request):
-        serializer = UserSerializer(data=request.data)
+# class CreateUserAPIView(APIView):
+#     permission_classes = [AllowAny]
+
+#     def post(self, request):
+#         serializer = UserSerializer(data=request.data)
         
-        if serializer.is_valid():
-            email = serializer.validated_data['email']
-            username = serializer.validated_data['username']
+#         if serializer.is_valid():
+#             email = serializer.validated_data['email']
+#             username = serializer.validated_data['username']
 
             
-            # Check if email already exists
-            if CustomUser.objects.filter(email=email).exists():
-                return Response({'message': 'Email already registered'}, status=status.HTTP_400_BAD_REQUEST)
+#             # Check if email already exists
+#             if CustomUser.objects.filter(email=email).exists():
+#                 return Response({'message': 'Email already registered'}, status=status.HTTP_400_BAD_REQUEST)
             
 
-            if CustomUser.objects.filter(username=username).exists():
-                return Response({'message': 'Username already taken'}, status=status.HTTP_400_BAD_REQUEST)
+#             if CustomUser.objects.filter(username=username).exists():
+#                 return Response({'message': 'Username already taken'}, status=status.HTTP_400_BAD_REQUEST)
 
-            # Proceed to create the user
-            username = serializer.validated_data['username']
-            password = serializer.validated_data['password']
-            phone_number = serializer.validated_data['phone_number']
+#             # Proceed to create the user
+#             username = serializer.validated_data['username']
+#             password = serializer.validated_data['password']
+#             phone_number = serializer.validated_data['phone_number']
 
-            user = CustomUser.objects.create_user(username=username, email=email, password=password)
+#             user = CustomUser.objects.create_user(username=username, email=email, password=password)
             
-            # Optional: save phone_number if it's part of your CustomUser model
-            user.phone_number = phone_number
-            user.save()
+#             # Optional: save phone_number if it's part of your CustomUser model
+#             user.phone_number = phone_number
+#             user.save()
 
-            token = get_tokens_for_user(user)
-            return Response({'token': token, 'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
+#             token = get_tokens_for_user(user)
+#             return Response({'token': token, 'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
         
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)            
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)            
