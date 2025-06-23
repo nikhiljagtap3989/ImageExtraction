@@ -450,3 +450,30 @@
 2025-06-23 10:47:18,780 | INFO     | authentication.views | post                 | Line 155  | Login attempt received.
 2025-06-23 10:47:03,845 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.
 2025-06-23 10:47:28,399 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-23 10:47:38,187 | INFO     | authentication.views | post                 | Line 155  | Login attempt received.
+2025-06-23 10:47:38,751 | INFO     | authentication.views | post                 | Line 172  | Login successful for user: NikhilVDX
+2025-06-23 10:47:47,032 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 10:48:11,834 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTDrruCqMgLUqrhhSkN3PXACGAwyaR-k6QjIs41hFp_xqe85QKCOBZPfIaSda3fxeTFP578c0nkqIDSzW3sW54XjCg==
+2025-06-23 10:48:11,970 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTDrruCqMgLUqrhhSkN3PXACGAwyaR-k6QjIs41hFp_xqe85QKCOBZPfIaSda3fxeTFP578c0nkqIDSzW3sW54XjCg==
+2025-06-23 10:48:11,971 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 173
+2025-06-23 10:48:11,985 | INFO     | ImageApp1.views | get                  | Line 103  | Document 173 retrieved successfully
+2025-06-23 10:48:26,558 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 10:48:30,100 | INFO     |            root | post                 | Line 457  | Input tokens: 1305, Output tokens: 277
+2025-06-23 10:48:34,188 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTEC75eXBKdu4Vao1v1IiqlWONbzBU-UoVDx9m_Ctja0NLyoVdsLp2MU6y59VhA5MPpcfIkiXFOaSGoiHLLuzxYLwg==
+2025-06-23 10:48:34,329 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTEC75eXBKdu4Vao1v1IiqlWONbzBU-UoVDx9m_Ctja0NLyoVdsLp2MU6y59VhA5MPpcfIkiXFOaSGoiHLLuzxYLwg==
+2025-06-23 10:48:34,330 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 174
+2025-06-23 10:48:34,341 | INFO     | ImageApp1.views | get                  | Line 103  | Document 174 retrieved successfully
+2025-06-23 10:48:50,272 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 10:48:53,854 | INFO     |            root | post                 | Line 457  | Input tokens: 1305, Output tokens: 277
+2025-06-23 10:48:57,772 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTEZ5d380bTtMY0bLLcCQZ45hz-6LxT7Mb8wl5Ci6R006JkBAbnpEsDErk0IY8vCGIsUVGhiFfHg4-yP_JkfCCbRPQ==
+2025-06-23 10:48:57,926 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTEZ5d380bTtMY0bLLcCQZ45hz-6LxT7Mb8wl5Ci6R006JkBAbnpEsDErk0IY8vCGIsUVGhiFfHg4-yP_JkfCCbRPQ==
+2025-06-23 10:48:57,927 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 175
+2025-06-23 10:48:57,941 | INFO     | ImageApp1.views | get                  | Line 103  | Document 175 retrieved successfully
+2025-06-23 10:49:08,320 | INFO     | authentication.views | post                 | Line 155  | Login attempt received.
+2025-06-23 10:49:08,879 | INFO     | authentication.views | post                 | Line 172  | Login successful for user: NikhilVDX
+2025-06-23 10:49:21,359 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 10:49:26,472 | INFO     |            root | post                 | Line 457  | Input tokens: 1305, Output tokens: 657
+2025-06-23 10:49:31,557 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTE7iCDc-5AD8hS9w8-7yfWvmSzJDpEfdM-JFMHBr03fIAKjrIboJbwtKSmGz_qbFbQHtbyjjTp0ms2n_yyg7mfCkw==
+2025-06-23 10:49:31,706 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTE7iCDc-5AD8hS9w8-7yfWvmSzJDpEfdM-JFMHBr03fIAKjrIboJbwtKSmGz_qbFbQHtbyjjTp0ms2n_yyg7mfCkw==
+2025-06-23 10:49:31,707 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 176
+2025-06-23 10:49:31,719 | INFO     | ImageApp1.views | get                  | Line 103  | Document 176 retrieved successfully
