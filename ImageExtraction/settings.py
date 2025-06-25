@@ -215,4 +215,6 @@ X_FRAME_OPTIONS = 'ALLOWALL'
 
 FERNET_KEY = b'0JrZYrB4GSD1agNWN_wZGJn8dEUmuXOb-02rLyubWDY='  
 
+# import os
+# os.environ["VERTEX_SERVICE_ACCOUNT"] = "D:/IDP_AI_App/Backend/Django Projects (2)/Django Projects/ImageExtraction/keys/vertex.json"
 

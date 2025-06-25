@@ -1,56 +1,3 @@
-# from rest_framework.views import APIView
-# from rest_framework.response import Response
-# from rest_framework import status
-# from django.contrib.auth import authenticate
-
-# from rest_framework.response import Response
-# from rest_framework import status
-# from rest_framework.views import APIView
-# from .serializers import LoginSerializer,UserSerializer,ProfileSerializer
-# from rest_framework_simplejwt.tokens import RefreshToken
-
-# from rest_framework import generics
-# from rest_framework.permissions import AllowAny
-
-      
-
-# from django.contrib.auth.models import User   
-# from authentication.models import CustomUser 
-# from rest_framework.permissions import AllowAny
-
-
-
-
-# import logging
-# from django.contrib.auth import authenticate
-# from rest_framework.permissions import AllowAny
-# from rest_framework.views import APIView
-# from rest_framework.response import Response
-# from rest_framework import status
-# from rest_framework_simplejwt.tokens import RefreshToken
-
-
-
-
-
-# from rest_framework.response import Response
-# from rest_framework import status
-# from rest_framework.permissions import AllowAny
-# from rest_framework.views import APIView
-# from django.contrib.auth import get_user_model
-# from .serializers import UserSerializer
-# # from .tokens import get_tokens_for_user  # Assuming you have this method
-
-
-
-
-
-# import logging
-# from ImageExtraction.logger import log_exception  # Use actual project name
-
-
-
-
 import logging
 from django.contrib.auth import authenticate, get_user_model
 from rest_framework.views import APIView
@@ -144,9 +91,6 @@ class ProfileDetailsView(APIView):
         
         return Response(serializer.data)
         
-
-
-
 
 class LoginView(APIView):
     permission_classes = [AllowAny]

@@ -479,3 +479,27 @@
 2025-06-23 10:49:31,719 | INFO     | ImageApp1.views | get                  | Line 103  | Document 176 retrieved successfully
 2025-06-23 11:33:44,176 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageExtraction\settings.py changed, reloading.
 2025-06-23 11:33:48,182 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-23 11:36:10,061 | INFO     | authentication.views | post                 | Line 155  | Login attempt received.
+2025-06-23 11:36:10,652 | INFO     | authentication.views | post                 | Line 172  | Login successful for user: NikhilVDX
+2025-06-23 11:36:20,891 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 11:36:24,580 | INFO     |            root | post                 | Line 457  | Input tokens: 1305, Output tokens: 277
+2025-06-23 11:36:27,434 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTw7qrsHuSWUt1EH9Dt4wv9tah6Vz4GvmlzxpmNLBpuS-3NlQ8tYdBAskDfqy9g2FEmR1KgA6Z2Mbeb_p02BOXwUAQ==
+2025-06-23 11:36:27,600 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTw7qrsHuSWUt1EH9Dt4wv9tah6Vz4GvmlzxpmNLBpuS-3NlQ8tYdBAskDfqy9g2FEmR1KgA6Z2Mbeb_p02BOXwUAQ==
+2025-06-23 11:36:27,601 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 177
+2025-06-23 11:36:27,614 | INFO     | ImageApp1.views | get                  | Line 103  | Document 177 retrieved successfully
+2025-06-23 11:36:37,658 | INFO     | authentication.views | post                 | Line 155  | Login attempt received.
+2025-06-23 11:36:38,267 | INFO     | authentication.views | post                 | Line 172  | Login successful for user: NikhilVDX
+2025-06-23 11:36:49,238 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 11:36:52,788 | INFO     |            root | post                 | Line 457  | Input tokens: 1305, Output tokens: 277
+2025-06-23 11:36:55,862 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTxX1KlsPbn9UBBSBxJ0oEe_jrKI63825gDTzhq6ZfN3BTnvInJrcktufwnoCqqFdYjYsqy6VGeCQh2wAmUguigTVA==
+2025-06-23 11:36:56,022 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTxX1KlsPbn9UBBSBxJ0oEe_jrKI63825gDTzhq6ZfN3BTnvInJrcktufwnoCqqFdYjYsqy6VGeCQh2wAmUguigTVA==
+2025-06-23 11:36:56,024 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 178
+2025-06-23 11:36:56,037 | INFO     | ImageApp1.views | get                  | Line 103  | Document 178 retrieved successfully
+2025-06-23 11:37:17,541 | INFO     | authentication.views | post                 | Line 155  | Login attempt received.
+2025-06-23 11:37:18,154 | INFO     | authentication.views | post                 | Line 172  | Login successful for user: NikhilVDX
+2025-06-23 11:37:30,663 | INFO     | ImageApp1.views | post                 | Line 292  | Upload request received
+2025-06-23 11:37:49,936 | INFO     | ImageApp1.views | post                 | Line 498  | Document processed and saved successfully. Document ID: gAAAAABoWTyN6dbX1m-u2ur0uTFcFENT_c0Y86oV2pVQXl3iBkQbC_bGWD2VidcyzEPVJjYZMZSvitXmb0Ap56CMhsPZ2m5jMA==
+2025-06-23 11:37:50,091 | INFO     | ImageApp1.views | get                  | Line 95   | GetDocumentByIdView called with encrypted ID: gAAAAABoWTyN6dbX1m-u2ur0uTFcFENT_c0Y86oV2pVQXl3iBkQbC_bGWD2VidcyzEPVJjYZMZSvitXmb0Ap56CMhsPZ2m5jMA==
+2025-06-23 11:37:50,092 | DEBUG    | ImageApp1.views | get                  | Line 99   | Decrypted ID: 179
+2025-06-23 11:37:50,105 | INFO     | ImageApp1.views | get                  | Line 103  | Document 179 retrieved successfully
+2025-06-24 05:15:34,884 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_AI_App\Backend\Django Projects (2)\Django Projects\ImageExtraction\ImageApp1\views.py changed, reloading.

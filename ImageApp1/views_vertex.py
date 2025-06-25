@@ -53,30 +53,42 @@ from google.oauth2 import service_account
 # print(response.text)
 
 # Load environment variables and configure the Gemini API key
-env_path = os.path.join(settings.BASE_DIR, '.env') if hasattr(settings, 'BASE_DIR') else None
-if env_path and os.path.exists(env_path):
+# env_path = os.path.join(settings.BASE_DIR, '.env') if hasattr(settings, 'BASE_DIR') else None
+# if env_path and os.path.exists(env_path):
+#     load_dotenv(env_path)
+# else:
+#     load_dotenv()
+
+
+# api_key = os.getenv("GEMINI_API_KEY")
+# if not api_key:
+#     raise RuntimeError("GEMINI_API_KEY not set in environment")
+# genai.configure(api_key=api_key)
+
+from dotenv import load_dotenv
+import os
+from google.oauth2 import service_account
+import google.generativeai as genai
+
+# Load environment
+env_path = os.path.join(settings.BASE_DIR, '.env') if hasattr(settings, 'BASE_DIR') else '.env'
+if os.path.exists(env_path):
     load_dotenv(env_path)
-else:
-    load_dotenv()
 
+# Load credentials
+service_account_path = os.getenv("VERTEX_SERVICE_ACCOUNT")
+print("ENV path:", service_account_path)
+print("File exists?", os.path.exists(service_account_path))
 
-api_key = os.getenv("GEMINI_API_KEY")
-if not api_key:
-    raise RuntimeError("GEMINI_API_KEY not set in environment")
-genai.configure(api_key=api_key)
+if not service_account_path or not os.path.exists(service_account_path):
+    raise RuntimeError("VERTEX_SERVICE_ACCOUNT path is not set or invalid")
 
-# Path to your downloaded service account JSON
-# service_account_path = os.getenv("VERTEX_SERVICE_ACCOUNT")
-# print("ENV path:", service_account_path)
-# print("File exists?", os.path.exists(service_account_path))
+credentials = service_account.Credentials.from_service_account_file(
+    service_account_path,
+    scopes=["https://www.googleapis.com/auth/cloud-platform"]
+)
 
-
-# if not service_account_path or not os.path.exists(service_account_path):
-#     raise RuntimeError("VERTEX_SERVICE_ACCOUNT path is not set or invalid")
-
-# credentials = service_account.Credentials.from_service_account_file(service_account_path)
-
-# genai.configure(credentials=credentials)
+genai.configure(credentials=credentials)
 
 
 def encrypt_id(id: int) -> str:
@@ -427,8 +439,8 @@ class UploadAndProcessFileView(APIView):
                 
                    
                 # Step 1: Extract structured JSON
-                model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
-                # model = GenerativeModel(model_name="models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
+                # model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
+                model = genai.GenerativeModel("models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
                 response = model.generate_content([data_part, prompt_text])
                 parsed_json = json.loads(response.text)
 
@@ -476,8 +488,8 @@ class UploadAndProcessFileView(APIView):
                 Ensure clarity, accuracy, and a professional format suitable for account approvers.""".strip()   
 
                 # data_part = {"mime_type": mime_type, "data": file_bytes}
-                model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
-                # model = GenerativeModel(model_name="models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
+                # model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
+                model = genai.GenerativeModel("models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
                 response = model.generate_content([data_part, REIMBURSEMENT_EXTRACTION_PROMPT])
                 extracted_json = json.loads(response.text)
                 parsed_json=extracted_json
