@@ -29,28 +29,12 @@ from django.conf import settings
 
 import logging
 from ImageExtraction.logger import log_exception 
-from google.oauth2 import service_account
 
 # Setup logger
 logger = logging.getLogger(__name__)
 
-import vertexai
-from google.oauth2 import service_account
+from .vertex_model import call_gemini_api
 
-
-# credentials_path = "D:/IDP_AI_App/Backend/Django Projects (2)/Django Projects/ImageExtraction/keys/vertex.json"
-# credentials = service_account.Credentials.from_service_account_file(credentials_path)
-
-# project_id = "vdxexccenter"
-# location = "us-central1" # e.g., "us-central1"
-
-# vertexai.init(project=project_id, location=location, credentials=credentials)
-
-# from vertexai.generative_models import GenerativeModel
-
-# model = GenerativeModel("gemini-pro") # Or "gemini-1.5-pro", etc.
-# response = model.generate_content("Tell me a story about a brave knight.")
-# print(response.text)
 
 # Load environment variables and configure the Gemini API key
 env_path = os.path.join(settings.BASE_DIR, '.env') if hasattr(settings, 'BASE_DIR') else None
@@ -58,25 +42,6 @@ if env_path and os.path.exists(env_path):
     load_dotenv(env_path)
 else:
     load_dotenv()
-
-
-api_key = os.getenv("GEMINI_API_KEY")
-if not api_key:
-    raise RuntimeError("GEMINI_API_KEY not set in environment")
-genai.configure(api_key=api_key)
-
-# Path to your downloaded service account JSON
-# service_account_path = os.getenv("VERTEX_SERVICE_ACCOUNT")
-# print("ENV path:", service_account_path)
-# print("File exists?", os.path.exists(service_account_path))
-
-
-# if not service_account_path or not os.path.exists(service_account_path):
-#     raise RuntimeError("VERTEX_SERVICE_ACCOUNT path is not set or invalid")
-
-# credentials = service_account.Credentials.from_service_account_file(service_account_path)
-
-# genai.configure(credentials=credentials)
 
 
 def encrypt_id(id: int) -> str:
@@ -146,7 +111,7 @@ class GetDocumentByIdView(APIView):
             }, status=status.HTTP_200_OK)
 
         except Exception:
-            logger.error("Error while fetching document by ID")
+            logger.error("Error while fetching document by ID", exc_info=True)
             log_exception(logger)          # ⬅️  full traceback to file
             return Response(
                 {"error": "Invalid or corrupted document ID"},
@@ -191,9 +156,10 @@ class UserDocumentView(APIView):
                 "total_output_tokens": total_output_tokens,
 
             }, status=status.HTTP_200_OK)
+            
 
         except Exception:
-            logger.error("Exception occurred while fetching user documents.")
+            logger.error("Exception occurred while fetching user documents.", exc_info=True)
             log_exception(logger)
             return Response({
                 "status": "error",
@@ -232,7 +198,7 @@ class FilteredDocumentView(APIView):
             }, status=status.HTTP_200_OK)
 
         except Exception:
-            logger.error("Exception occurred while filtering documents.")
+            logger.error("Exception occurred while filtering documents.", exc_info=True)
             log_exception(logger)
             return Response({
                 "error": "An internal error occurred. Please try again later."
@@ -299,8 +265,11 @@ class RenderJsonToHtmlView(APIView):
 
         prompt = JSON_TO_HTML_PROMPT.format(json.dumps(json_data, indent=2))
 
-        response = model.generate_content(prompt)
-        raw_html = response.text.strip()
+        response = call_gemini_api(
+            prompt_text=prompt
+        )
+        result = response['candidates'][0]['content']['parts'][0]['text']
+        raw_html = result
 
     
 
@@ -321,7 +290,6 @@ class RenderJsonToHtmlView(APIView):
         return render(request, 'rendered_html.html', {'html_body': html_body})
 
 
-
 class UploadAndProcessFileView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -336,9 +304,8 @@ class UploadAndProcessFileView(APIView):
         input_tokens=""
         output_tokens=""
 
-
         if not uploaded_file:
-            logger.error("Upload failed: 'File' is missing in the request.")
+            logger.error("Upload failed: 'File' is missing in the request.", exc_info=True)
          
             return Response(
                 {"status": "error", "message": "Missing 'pdf_file'"},
@@ -375,12 +342,11 @@ class UploadAndProcessFileView(APIView):
                 with open(absolute_path, "rb") as f:
                     data_part = {"mime_type": "application/pdf", "data": f.read()}
             else:
-                logger.error("Unsupported file type")
+                logger.error("Unsupported file type", exc_info=True)
                 return Response(
                     {"status": "error", "message": "Unsupported file type"},
                     status=status.HTTP_400_BAD_REQUEST
                 )
-
 
             JSON_TO_HTML_PROMPT = """ 
             You are an expert at converting structured JSON data into a complete, human-readable, and printable HTML document. 
@@ -427,16 +393,23 @@ class UploadAndProcessFileView(APIView):
                 
                    
                 # Step 1: Extract structured JSON
-                model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
-                # model = GenerativeModel(model_name="models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
-                response = model.generate_content([data_part, prompt_text])
-                parsed_json = json.loads(response.text)
+                # model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
+                # # model = GenerativeModel(model_name="models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
+                # response = model.generate_content([data_part, prompt_text])
+                response = call_gemini_api(
+                    prompt_text=prompt_text,
+                    input_data=absolute_path,
+                    response_mime_type="application/json"
+                )
+                result = response['candidates'][0]['content']['parts'][0]['text']
+                parsed_json = json.loads(result)
 
 
-                if response.usage_metadata:
-                    input_tokens = response.usage_metadata.prompt_token_count
-                    output_tokens = response.usage_metadata.candidates_token_count
-                    total_tokens = response.usage_metadata.total_token_count
+                if 'usageMetadata' in response:
+                    usage_metadata = response['usageMetadata']
+                    input_tokens = usage_metadata.get('promptTokenCount', 0)
+                    output_tokens = usage_metadata.get('candidatesTokenCount', 0)
+                    total_tokens = usage_metadata.get('totalTokenCount', 0)
 
                     print(f"Input Tokens: {input_tokens}")
                     print(f"Output Tokens: {output_tokens}")
@@ -448,8 +421,11 @@ class UploadAndProcessFileView(APIView):
 
                 # Step 2: Convert JSON to HTML
                 html_prompt = JSON_TO_HTML_PROMPT.format(json.dumps(parsed_json, indent=2, ensure_ascii=False))
-                html_response = model.generate_content([html_prompt])
-                raw_html = html_response.text.strip()
+                html_response = call_gemini_api(
+                    prompt_text=html_prompt
+                )
+                result = html_response['candidates'][0]['content']['parts'][0]['text']
+                raw_html = result
 
 
 
@@ -476,28 +452,32 @@ class UploadAndProcessFileView(APIView):
                 Ensure clarity, accuracy, and a professional format suitable for account approvers.""".strip()   
 
                 # data_part = {"mime_type": mime_type, "data": file_bytes}
-                model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
-                # model = GenerativeModel(model_name="models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
-                response = model.generate_content([data_part, REIMBURSEMENT_EXTRACTION_PROMPT])
-                extracted_json = json.loads(response.text)
+                # model = genai.GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
+                # # model = GenerativeModel(model_name="models/gemini-1.5-flash", generation_config={"response_mime_type": "application/json"})
+                # response = model.generate_content([data_part, REIMBURSEMENT_EXTRACTION_PROMPT])
+                response = call_gemini_api(
+                    prompt_text=REIMBURSEMENT_EXTRACTION_PROMPT,
+                    input_data=absolute_path,
+                    response_mime_type="application/json"
+                )
+                result = response['candidates'][0]['content']['parts'][0]['text']
+                extracted_json = json.loads(result)
                 parsed_json=extracted_json
 
 
-                if response.usage_metadata:
-                    input_tokens = response.usage_metadata.prompt_token_count
-                    output_tokens = response.usage_metadata.candidates_token_count
-                    total_tokens = response.usage_metadata.total_token_count
+                if 'usageMetadata' in response:
+                    usage_metadata = response['usageMetadata']
+                    input_tokens = usage_metadata.get('promptTokenCount', 0)
+                    output_tokens = usage_metadata.get('candidatesTokenCount', 0)
+                    total_tokens = usage_metadata.get('totalTokenCount', 0)
 
                     print(f"Input Tokens: {input_tokens}")
                     print(f"Output Tokens: {output_tokens}")
                     print(f"Total Tokens: {total_tokens}")
+                    logging.info(f"Input tokens: {input_tokens}, Output tokens: {output_tokens}")
                 else:
                     print("Usage metadata not available in the response.")
-
-
-
-                # ✅ Log the token usage
-                logging.info(f"Input tokens: {input_tokens}, Output tokens: {output_tokens}")
+                    logging.info("Usage metadata not available in the response.")
 
                 
                 if isinstance(extracted_json, list) and extracted_json:
@@ -505,8 +485,11 @@ class UploadAndProcessFileView(APIView):
 
                      # Step 2: Convert JSON to HTML
                 html_prompt = JSON_TO_HTML_PROMPT.format(json.dumps(parsed_json, indent=2, ensure_ascii=False))
-                html_response = model.generate_content([html_prompt])
-                raw_html = html_response.text.strip()     
+                html_response = call_gemini_api(
+                    prompt_text=html_prompt
+                )
+                result = html_response['candidates'][0]['content']['parts'][0]['text']
+                raw_html = result     
     
 
             # Handle if the HTML comes as a JSON stringified list
@@ -546,8 +529,8 @@ class UploadAndProcessFileView(APIView):
             }, status=status.HTTP_200_OK)
 
         except Exception as e:
-            logger.error(status.HTTP_500_INTERNAL_SERVER_ERROR)
-            logger.error("Error while processing document.")
+            logger.error(status.HTTP_500_INTERNAL_SERVER_ERROR, exc_info=True)
+            logger.error("Error while processing document.", exc_info=True)
             log_exception(logger)
             return Response(
                 {"status": "error", "message": str(e)},
@@ -608,10 +591,13 @@ class UploadAndValidateReimbursementView(APIView):
                 Ensure clarity, accuracy, and a professional format suitable for account approvers.""".strip()   
 
             # Step 1: Extract JSON
-            data_part = {"mime_type": mime_type, "data": file_bytes}
-            model = GenerativeModel("gemini-2.0-flash", generation_config={"response_mime_type": "application/json"})
-            response = model.generate_content([data_part, REIMBURSEMENT_EXTRACTION_PROMPT])
-            extracted_json = json.loads(response.text)
+            response = call_gemini_api(
+                prompt_text=REIMBURSEMENT_EXTRACTION_PROMPT,
+                input_data=file_path,
+                response_mime_type="application/json"
+            )
+            result = response['candidates'][0]['content']['parts'][0]['text']
+            extracted_json = json.loads(result)
 
             if isinstance(extracted_json, list) and extracted_json:
                 extracted_json = extracted_json[0]
@@ -658,15 +644,18 @@ class UploadAndValidateReimbursementView(APIView):
             """.strip()
 
             prompt = JSON_TO_HTML_PROMPT.format(json.dumps(extracted_json, indent=2))
-            html_response = model.generate_content(prompt)
-            raw_html = html_response.text.strip()
+            html_response = call_gemini_api(
+                prompt_text=prompt
+            )
+            result = html_response['candidates'][0]['content']['parts'][0]['text']
+           
 
             # Optional: clean parsed HTML (if Gemini returns it as a list)
             try:
-                parsed_html = json.loads(raw_html)
+                parsed_html = json.loads(result)
                 html_body = "".join(parsed_html) if isinstance(parsed_html, list) else parsed_html
             except Exception:
-                html_body = raw_html
+                html_body = html_response
 
             # Step 3: Save to DB (create or update)
 

@@ -58,7 +58,7 @@ class CreateUserAPIView(APIView):
             }, status=status.HTTP_201_CREATED)
 
         except Exception:
-            logger.error("Error occurred during user registration.")
+            logger.error("Error occurred during user registration.", exc_info=True)
             log_exception(logger)
             return Response(
                 {"message": "An unexpected error occurred. Please try again later."},
@@ -127,7 +127,7 @@ class LoginView(APIView):
                 return Response({'message': 'Invalid email or password'}, status=status.HTTP_401_UNAUTHORIZED)
 
         except Exception:
-            logger.error("Unexpected error occurred during login.")
+            logger.error("Unexpected error occurred during login.", exc_info=True)
             log_exception(logger)
             return Response(
                 {'message': 'An unexpected error occurred during login. Please try again later.'},

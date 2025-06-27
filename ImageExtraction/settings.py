@@ -110,8 +110,9 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "IDPAI",
         "USER" :"postgres",
-        "PASSWORD" : "root",
+        "PASSWORD" : "admin",
         "HOST" : "localhost",
+        "PORT" : "5432"
     }
 }
 
@@ -218,3 +219,7 @@ FERNET_KEY = b'0JrZYrB4GSD1agNWN_wZGJn8dEUmuXOb-02rLyubWDY='
 # import os
 # os.environ["VERTEX_SERVICE_ACCOUNT"] = "D:/IDP_AI_App/Backend/Django Projects (2)/Django Projects/ImageExtraction/keys/vertex.json"
 
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+}
