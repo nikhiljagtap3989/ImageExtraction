@@ -401,22 +401,38 @@ class UploadAndProcessFileView(APIView):
                     logger.error("Invalid API response format for JSON extraction.", exc_info=True)
                     return Response({"error": "Invalid API response format"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
                 
-                result_json = response['candidates'][0]['content']['parts'][0]['text']
-                # logger.debug(f"Raw JSON API response: {result_json}")
-                
-                if not result_json:
-                    logger.error("Empty JSON response from API.", exc_info=True)
-                    return Response({"error": "Empty JSON response from API"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-                
-                parsed_json = safe_json_load(result_json)
-                
-                # Handle cases where the model might return a list with a single dictionary for consistency
-                if isinstance(parsed_json, list) and parsed_json:
-                    parsed_json = parsed_json[0]
+                try:
+                    # Get the response text
+                    result_json = response['candidates'][0]['content']['parts'][0]['text']
+                    logger.debug(f"Raw JSON API response: {result_json[:200]}...")  # Log first 200 chars for debugging
+                    
+                    if not result_json:
+                        logger.error("Empty JSON response from API.", exc_info=True)
+                        return Response({"error": "Empty JSON response from API"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                    
+                    # Try to parse JSON with our safe parser
+                    parsed_json = safe_json_load(result_json)
+                    
+                    if parsed_json is None:
+                        logger.error("Failed to parse JSON: Invalid JSON format", exc_info=True)
+                        return Response({"error": "Invalid JSON format received from API"}, status=status.HTTP_400_BAD_REQUEST)
+                    
+                    # Handle cases where the model might return a list with a single dictionary
+                    if isinstance(parsed_json, list) and parsed_json:
+                        parsed_json = parsed_json[0]
 
-                if not isinstance(parsed_json, dict):
-                    logger.error("Parsed JSON is not a dictionary.", exc_info=True)
-                    return Response({"error": "Invalid JSON format received from API"}, status=status.HTTP_400_BAD_REQUEST)
+                    if not isinstance(parsed_json, dict):
+                        logger.error("Parsed JSON is not a dictionary.", exc_info=True)
+                        return Response({"error": "Invalid JSON format received from API"}, status=status.HTTP_400_BAD_REQUEST)
+
+                    logger.debug("Successfully parsed JSON response")
+                    
+                except KeyError as e:
+                    logger.error(f"Missing key in API response: {str(e)}", exc_info=True)
+                    return Response({"error": "Invalid API response format"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                except Exception as e:
+                    logger.error(f"Unexpected error processing API response: {str(e)}", exc_info=True)
+                    return Response({"error": "Error processing API response"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
             except json.JSONDecodeError as e:
                 logger.error(f"JSON decoding error during extraction: {str(e)}", exc_info=True)

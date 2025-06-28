@@ -14,3 +14,16 @@ __pycache__/
 # Ignore Django migrations (optional)
 */migrations/*.py
 */migrations/*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore uploaded files
+uploads/
+
+# Ignore media files
+media/
+
+# Ignore static files
+static/
+

@@ -1503,3 +1503,25 @@ Exception: API request failed after 5 retries: 404 Publisher Model `projects/vdx
 </body>
 </html>
 2025-06-28 13:52:41 - ImageApp1.views - INFO - Document processed and saved successfully. Document ID: gAAAAABoX6ZRqK7fj0AxKCYd5APT7ckCLScHtHEyO-aGuYOxmpRE6MBXrZ-BQAG2IwA7k7gfWQ8XUoqSgk4IWY4mL9i0YgdmLA==
+2025-06-28 13:57:01 - ImageApp1.views - INFO - Upload request received
+2025-06-28 13:56:53 - django.utils.autoreload - INFO - D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-28 14:26:47 - django.request - WARNING - Unauthorized: /IDA/upload/
+2025-06-28 14:32:37 - django.request - WARNING - Unauthorized: /IDA/upload/
+2025-06-28 14:33:54 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-06-28 14:34:27 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-06-28 14:36:33 - authentication.views - INFO - Login attempt received.
+2025-06-28 14:36:37 - authentication.views - INFO - Login successful for user: abc
+2025-06-28 14:36:53 - ImageApp1.views - INFO - Upload request received
+2025-06-28 14:38:41 - ImageApp1.views - INFO - JSON Extraction - Input Tokens: 2651, Output Tokens: 5948
+2025-06-28 14:40:01 - ImageApp1.views - INFO - Document processed and saved successfully. Document ID: gAAAAABoX7FpvCRbZFCYYeMW13tci_JtdMMAmkgkxH7VDdxjKsGCEp3t-amF1LsG7XQDwuvMiHfSeVE2jCl070awtu-keBvq_A==
+2025-06-28 14:41:09 - django.request - WARNING - Unauthorized: /IDA/get-document/gAAAAABoX7FpvCRbZFCYYeMW13tci_JtdMMAmkgkxH7VDdxjKsGCEp3t-amF1LsG7XQDwuvMiHfSeVE2jCl070awtu-keBvq_A==/
+2025-06-28 14:41:33 - ImageApp1.views - INFO - GetDocumentByIdView called with encrypted ID: gAAAAABoX7FpvCRbZFCYYeMW13tci_JtdMMAmkgkxH7VDdxjKsGCEp3t-amF1LsG7XQDwuvMiHfSeVE2jCl070awtu-keBvq_A==
+2025-06-28 14:41:33 - ImageApp1.views - DEBUG - Decrypted ID: 202
+2025-06-28 14:41:33 - ImageApp1.views - INFO - Document 202 retrieved successfully
+2025-06-28 14:44:08 - ImageApp1.views - INFO - Upload request received
+2025-06-28 14:44:08 - ImageApp1.views - WARNING - No specific prompt provided for doc_type: re. Using generic prompt.
+2025-06-28 14:45:31 - ImageApp1.views - INFO - JSON Extraction - Input Tokens: 785, Output Tokens: 4283
+2025-06-28 14:46:29 - authentication.views - INFO - Login attempt received.
+2025-06-28 14:46:34 - authentication.views - INFO - Login successful for user: abc
+2025-06-28 14:46:42 - ImageApp1.views - INFO - Document processed and saved successfully. Document ID: gAAAAABoX7L6IodjpaLFJXh2klnledz_q9AtguuhvWFwQRRBSlITPmEuWDevQgyj8cFz8QyH6F32UjefVkNIktDUxvewjqGR5g==
+2025-06-28 14:47:35 - django.utils.autoreload - INFO - D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
