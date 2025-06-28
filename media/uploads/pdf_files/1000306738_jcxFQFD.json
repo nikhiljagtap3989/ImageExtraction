@@ -1,0 +1,582 @@
+{
+  "university_name": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+  "university_subtitle": "(formerly University of Pune)",
+  "university_address": "GANESHKHIND, PUNE 411007.",
+  "branch": "MASTER OF BUSINESS ADMINISTRATION (REV.2019) - APRIL 2022",
+  "seat_no": "36969",
+  "centre": "0331",
+  "perm_reg_no": "2052000324",
+  "student_name": "ISHWARKATTI PRAMOD ADAVYAPPA",
+  "mother_name": "SANGITA",
+  "college_name": "0331 AUDYOGIK SHIKSHAN MANDAL'S INSTITUTE OF BUSINESS MANAGEMENT & RESEARCH",
+  "college_location": "CHINCHWAD",
+  "results": [
+    {
+      "sem": 1,
+      "subjects": [
+        {
+          "subcode": "101",
+          "subject_name": "GC-01 MANAGERIAL ACCOUNTING",
+          "int_marks": 41,
+          "uex_marks": 44,
+          "total_marks": 85,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "102",
+          "subject_name": "GC-02 ORGANIZATIONAL BEHAVIOUR",
+          "int_marks": 42,
+          "uex_marks": 50,
+          "total_marks": 92,
+          "credits": "P 03",
+          "grade": "O",
+          "gp": 30
+        },
+        {
+          "subcode": "103",
+          "subject_name": "GC-03 ECONOMIC ANALYSIS FOR BUSINESS DECISIONS",
+          "int_marks": 39,
+          "uex_marks": 50,
+          "total_marks": 89,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "104",
+          "subject_name": "GC-04 BUSINESS RESEARCH METHODS",
+          "int_marks": 41,
+          "uex_marks": 50,
+          "total_marks": 91,
+          "credits": "P 03",
+          "grade": "O",
+          "gp": 30
+        },
+        {
+          "subcode": "105",
+          "subject_name": "GC-05 BASICS OF MARKETING",
+          "int_marks": 37,
+          "uex_marks": 50,
+          "total_marks": 87,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "106",
+          "subject_name": "GC-06 DIGITAL BUSINESS",
+          "int_marks": 41,
+          "uex_marks": 41,
+          "total_marks": 82,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "107",
+          "subject_name": "GE-UL-01 MANAGEMENT FUNDAMENTALS",
+          "int_marks": null,
+          "uex_marks": 48,
+          "total_marks": 48,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "109",
+          "subject_name": "GE-UL-03 ENTREPRENEURSHIP DEVELOPMENT",
+          "int_marks": null,
+          "uex_marks": 50,
+          "total_marks": 50,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "111",
+          "subject_name": "GE-UL-05 LEGAL ASPECTS OF BUSINESS",
+          "int_marks": null,
+          "uex_marks": 48,
+          "total_marks": 48,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "115",
+          "subject_name": "GE-IL-03 SELLING & NEGOTIATION SKILLS LAB",
+          "int_marks": 37,
+          "uex_marks": null,
+          "total_marks": 37,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": 16
+        },
+        {
+          "subcode": "116",
+          "subject_name": "GE-IL-04 MS EXCEL",
+          "int_marks": 42,
+          "uex_marks": null,
+          "total_marks": 42,
+          "credits": "P 02",
+          "grade": "A",
+          "gp": 18
+        },
+        {
+          "subcode": "117",
+          "subject_name": "GE-IL-05 BUSINESS SYSTEMS & PROCEDURES",
+          "int_marks": 39,
+          "uex_marks": null,
+          "total_marks": 39,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": 16
+        },
+        {
+          "subcode": "191",
+          "subject_name": "HUMAN RIGHTS - I",
+          "int_marks": 19,
+          "uex_marks": null,
+          "total_marks": 19,
+          "credits": "P 01",
+          "grade": "B",
+          "gp": null
+        },
+        {
+          "subcode": "192",
+          "subject_name": "INTRODUCTION TO CYBER SECURITY-1",
+          "int_marks": 21,
+          "uex_marks": null,
+          "total_marks": 21,
+          "credits": "P 01",
+          "grade": "A",
+          "gp": null
+        }
+      ]
+    },
+    {
+      "sem": 2,
+      "subjects": [
+        {
+          "subcode": "201",
+          "subject_name": "GC-07 MARKETING MANAGEMENT",
+          "int_marks": 37,
+          "uex_marks": 41,
+          "total_marks": 78,
+          "credits": "P 03",
+          "grade": "B",
+          "gp": 24
+        },
+        {
+          "subcode": "202",
+          "subject_name": "GC-08 FINANCIAL MANAGEMENT",
+          "int_marks": 37,
+          "uex_marks": 46,
+          "total_marks": 83,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "203",
+          "subject_name": "GC-09 HUMAN RESOURCES MANAGEMENT",
+          "int_marks": 38,
+          "uex_marks": 49,
+          "total_marks": 87,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "204",
+          "subject_name": "GC-10 OPERATIONS & SUPPLY CHAIN MANAGEMENT",
+          "int_marks": 35,
+          "uex_marks": 50,
+          "total_marks": 85,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "205 BA",
+          "subject_name": "SC-BA-01 BASIC BUSINESS ANALYTICS USING R",
+          "int_marks": 37,
+          "uex_marks": 43,
+          "total_marks": 80,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "206 BA",
+          "subject_name": "SC-BA-02 DATA MINIMG",
+          "int_marks": 35,
+          "uex_marks": 50,
+          "total_marks": 85,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "207",
+          "subject_name": "GE-UL-07 CONTEMPORARY FRAMEWORKS IN MANAGEMENT",
+          "int_marks": null,
+          "uex_marks": 50,
+          "total_marks": 50,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "209",
+          "subject_name": "GE-UL-09 START UP AND NEW VENTURE MANAGEMENT",
+          "int_marks": null,
+          "uex_marks": 44,
+          "total_marks": 44,
+          "credits": "P 02",
+          "grade": "A",
+          "gp": 18
+        },
+        {
+          "subcode": "211",
+          "subject_name": "GE-UL-11 BUSINESS, GOVERNMENT & SOCIETY",
+          "int_marks": null,
+          "uex_marks": 46,
+          "total_marks": 46,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "214",
+          "subject_name": "GE-IL-09 INDUSTRY ANALYSIS & DESK RESEARCH",
+          "int_marks": 35,
+          "uex_marks": null,
+          "total_marks": 35,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": 16
+        },
+        {
+          "subcode": "217 BA",
+          "subject_name": "SE-IL-BA-01 MARKETING ANALYTICS",
+          "int_marks": 35,
+          "uex_marks": null,
+          "total_marks": 35,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": 16
+        },
+        {
+          "subcode": "218 BA",
+          "subject_name": "SE-IL-BA-02 RETAILING ANALYTICS",
+          "int_marks": 34,
+          "uex_marks": null,
+          "total_marks": 34,
+          "credits": "P 02",
+          "grade": "C",
+          "gp": 14
+        },
+        {
+          "subcode": "291",
+          "subject_name": "HUMAN RIGHTS - II",
+          "int_marks": 19,
+          "uex_marks": null,
+          "total_marks": 19,
+          "credits": "P 01",
+          "grade": "B",
+          "gp": null
+        },
+        {
+          "subcode": "292",
+          "subject_name": "INTRODUCTION TO CYBER SECURITY - II",
+          "int_marks": 18,
+          "uex_marks": null,
+          "total_marks": 18,
+          "credits": "P 01",
+          "grade": "B",
+          "gp": null
+        }
+      ]
+    },
+    {
+      "sem": 3,
+      "subjects": [
+        {
+          "subcode": "301",
+          "subject_name": "GC-11 STRATEGIC MANAGEMENT",
+          "int_marks": 37,
+          "uex_marks": 49,
+          "total_marks": 86,
+          "credits": "P 03",
+          "grade": "A",
+          "gp": 27
+        },
+        {
+          "subcode": "302",
+          "subject_name": "GC-12 DECISION SCIENCE",
+          "int_marks": 38,
+          "uex_marks": 39,
+          "total_marks": 77,
+          "credits": "P 03",
+          "grade": "B",
+          "gp": 24
+        },
+        {
+          "subcode": "303",
+          "subject_name": "GC-13 SUMMER INTERNSHIP PROJECT",
+          "int_marks": 26,
+          "uex_marks": 32,
+          "total_marks": 58,
+          "credits": "P 06",
+          "grade": "D",
+          "gp": 36
+        },
+        {
+          "subcode": "304 BA",
+          "subject_name": "SC-BA-03 ADVANCED STATISTICAL METHODS USING R",
+          "int_marks": 33,
+          "uex_marks": 40,
+          "total_marks": 73,
+          "credits": "P 03",
+          "grade": "B",
+          "gp": 24
+        },
+        {
+          "subcode": "305 MKT",
+          "subject_name": "SC-MKT-04 SALES & DISTRIBUTION MANAGEMENT",
+          "int_marks": 35,
+          "uex_marks": 44,
+          "total_marks": 79,
+          "credits": "P 03",
+          "grade": "B",
+          "gp": 24
+        },
+        {
+          "subcode": "306",
+          "subject_name": "GE-UL-13 INTERNATIONAL BUSINESS ECONOMICS",
+          "int_marks": null,
+          "uex_marks": 49,
+          "total_marks": 49,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "310",
+          "subject_name": "GE-UL-17 CORPORATE GOVERNANCE",
+          "int_marks": null,
+          "uex_marks": 50,
+          "total_marks": 50,
+          "credits": "P 02",
+          "grade": "O",
+          "gp": 20
+        },
+        {
+          "subcode": "311",
+          "subject_name": "GE-UL-18 MANAGEMENT OF NON-PROFIT ORGANIZATIONS",
+          "int_marks": null,
+          "uex_marks": 39,
+          "total_marks": 39,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": 16
+        },
+        {
+          "subcode": "312 BA",
+          "subject_name": "SE-IL-BA-06 SOCIAL MEDIA, WEB & TEXT ANALYTICS",
+          "int_marks": 30,
+          "uex_marks": null,
+          "total_marks": 30,
+          "credits": "P 02",
+          "grade": "C",
+          "gp": 14
+        },
+        {
+          "subcode": "313 BA",
+          "subject_name": "SE-IL-BA-07 INDUSTRIAL INTERNET OF THINGS",
+          "int_marks": 29,
+          "uex_marks": null,
+          "total_marks": 29,
+          "credits": "P 02",
+          "grade": "D",
+          "gp": 12
+        },
+        {
+          "subcode": "316 MKT",
+          "subject_name": "SE-IL-MKT-11 MARKETING ANALYTICS",
+          "int_marks": 38,
+          "uex_marks": null,
+          "total_marks": 38,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": 16
+        },
+        {
+          "subcode": "392",
+          "subject_name": "INTRODUCTION TO CYBER SECURITY - III",
+          "int_marks": 19,
+          "uex_marks": null,
+          "total_marks": 19,
+          "credits": "P 01",
+          "grade": "B",
+          "gp": null
+        },
+        {
+          "subcode": "394",
+          "subject_name": "SKILL DEVELOPMENT - I",
+          "int_marks": 30,
+          "uex_marks": null,
+          "total_marks": 30,
+          "credits": "P 02",
+          "grade": "C",
+          "gp": null
+        },
+        {
+          "subcode": "395",
+          "subject_name": "INTRODUCTION TO CONSTITUTION",
+          "int_marks": 38,
+          "uex_marks": null,
+          "total_marks": 38,
+          "credits": "P 02",
+          "grade": "B",
+          "gp": null
+        }
+      ]
+    },
+    {
+      "sem": 4,
+      "subjects": [
+        {
+          "subcode": "401",
+          "subject_name": "GC-14 ENTERPRISE PERFORMANCE MANAGEMENT",
+          "int_marks": 29,
+          "uex_marks": 25,
+          "total_marks": 54,
+          "credits": "* 03",
+          "grade": "D",
+          "gp": 18
+        },
+        {
+          "subcode": "402",
+          "subject_name": "GC-15 INDIAN ETHOS & BUSINESS ETHICS",
+          "int_marks": 30,
+          "uex_marks": 33,
+          "total_marks": 63,
+          "credits": "*03",
+          "grade": "C",
+          "gp": 21
+        },
+        {
+          "subcode": "403 BA",
+          "subject_name": "SC-BA-05 ECONOMICS OF NETWORK INDUSTRIES",
+          "int_marks": 34,
+          "uex_marks": 40,
+          "total_marks": 74,
+          "credits": "*03",
+          "grade": "B",
+          "gp": 24
+        },
+        {
+          "subcode": "404 MKT",
+          "subject_name": "SC-MKT-06 MARKETING STRATEGY",
+          "int_marks": 32,
+          "uex_marks": 26,
+          "total_marks": 58,
+          "credits": "*03",
+          "grade": "D",
+          "gp": 18
+        },
+        {
+          "subcode": "405",
+          "subject_name": "GE-UL-19 GLOBAL STRATEGIC MANAGEMENT",
+          "int_marks": null,
+          "uex_marks": 25,
+          "total_marks": 25,
+          "credits": "* 02",
+          "grade": "D",
+          "gp": 12
+        },
+        {
+          "subcode": "408",
+          "subject_name": "GE-UL-22 CORPORATE SOCIAL RESPOSIBILITY & SUSTAINA",
+          "int_marks": null,
+          "uex_marks": 20,
+          "total_marks": 20,
+          "credits": "* 02",
+          "grade": "P",
+          "gp": 8
+        },
+        {
+          "subcode": "409 MKT",
+          "subject_name": "SE-IL-MKT-13 CUSTOMER RELATIONSHIP MANAGEMENT",
+          "int_marks": 31,
+          "uex_marks": null,
+          "total_marks": 31,
+          "credits": "* 02",
+          "grade": "C",
+          "gp": 14
+        },
+        {
+          "subcode": "410 BA",
+          "subject_name": "SE-IL-BA-14 HEALTHCARE ANALYTICS",
+          "int_marks": 28,
+          "uex_marks": null,
+          "total_marks": 28,
+          "credits": "*02",
+          "grade": "D",
+          "gp": 12
+        },
+        {
+          "subcode": "492",
+          "subject_name": "INTRODUCTION TO CYBER SECURITY - IV",
+          "int_marks": 20,
+          "uex_marks": null,
+          "total_marks": 20,
+          "credits": "* 01",
+          "grade": "A",
+          "gp": null
+        },
+        {
+          "subcode": "494",
+          "subject_name": "SKILL DEVELOPMENT - II",
+          "int_marks": 31,
+          "uex_marks": null,
+          "total_marks": 31,
+          "credits": "*02",
+          "grade": "C",
+          "gp": null
+        }
+      ]
+    }
+  ],
+  "grand_total_marks": 2493,
+  "grand_total_out_of": 3200,
+  "sgpa": [
+    {
+      "semester": 1,
+      "sgpa": 9.27
+    },
+    {
+      "semester": 2,
+      "sgpa": 8.77
+    },
+    {
+      "semester": 3,
+      "sgpa": 7.77
+    },
+    {
+      "semester": 4,
+      "sgpa": 6.35
+    }
+  ],
+  "total_points": 901,
+  "total_credits": 110,
+  "total_marks_summary": "2493/3200",
+  "percentage": 77.91,
+  "cgpa": 8.19,
+  "final_result": "FIRST CLASS WITH DISTINCTION",
+  "result_date": "14 November 2022"
+}

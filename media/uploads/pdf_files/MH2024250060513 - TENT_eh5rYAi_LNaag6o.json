@@ -1,0 +1,61 @@
+{
+  "invoice_number": "51",
+  "invoice_date": "2021-12-22",
+  "vendor_details": {
+    "name": "M.N.S. ಶಾಮಿಯಾನ ಹೌಸ್ ಅಂಡ್ ಫ್ಲವರ್ ಡೆಕೋರೇಟರ್ಸ್",
+    "proprietor": "ಎನ್. ಮಂಜುನಾಥರೆಡ್ಡಿ",
+    "address": "ಮಾಡಿಕೆರೆ ಕ್ರಾಸ್, ಊಲವಾಡಿ ಪಂಚಾಯ್ತಿ, ಚಿಂತಾಮಣಿ ತಾಲ್ಲೂಕು, ಚಿಕ್ಕಬಳ್ಳಾಪುರ ಜಿಲ್ಲೆ.",
+    "phone": [
+      "9902711519",
+      "9743917615"
+    ]
+  },
+  "customer_details": {
+    "name": "ASHOKA. K.V. MALYCO PVT LTD",
+    "billing_address": "ClickanBalapur"
+  },
+  "line_items": [
+    {
+      "description": "ಚೇರ್ (Chair)",
+      "quantity": 150,
+      "unit_price": 10,
+      "amount": 1500.0
+    },
+    {
+      "description": "ಸೈಡ್ ವಾಲ್ (Side Wall)",
+      "quantity": 6,
+      "unit_price": 500,
+      "amount": 3000.0
+    },
+    {
+      "description": "ನೀರಿನ ಡ್ರಮ್ (Water Drum)",
+      "quantity": 2,
+      "unit_price": 200,
+      "amount": 400.0
+    },
+    {
+      "description": "ಸ್ಟೀನ್ ಬಟ್ಟೆ (Steel Cloth)",
+      "quantity": 1,
+      "unit_price": 300,
+      "amount": 300.0
+    },
+    {
+      "description": "ಬಾಡಿಗೆ (Rent)",
+      "quantity": 1,
+      "unit_price": 1800,
+      "amount": 1800.0
+    },
+    {
+      "description": "10x20",
+      "quantity": 2,
+      "unit_price": 1500,
+      "amount": 3000.0
+    }
+  ],
+  "total_summary": {
+    "subtotal": 10000.0,
+    "total_amount": 10000.0,
+    "amount_due": 10000.0
+  },
+  "notes": "ಸಾಮಾನುಗಳು ಕಳೆದುಹೋದಲ್ಲಿ ಪಾರ್ಟಿಗಳೇ ಜವಾಬ್ದಾರಿ (If items are lost, the parties are responsible)."
+}

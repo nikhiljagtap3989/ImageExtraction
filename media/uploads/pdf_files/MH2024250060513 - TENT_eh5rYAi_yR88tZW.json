@@ -1,0 +1,58 @@
+{
+  "merchant_name": "M.N.S. ಶಾಮಿಯಾನ ಹೌಸ್ ಅಂಡ್ ಫ್ಲವರ್ ಡೆಕೋರೇಟರ್ಸ್",
+  "merchant_address": "ಮಾಡಿಕೆರೆ ಕ್ರಾಸ್, ಊಲವಾಡಿ ಪಂಚಾಯ್ತಿ, ಚಿಂತಾಮಣಿ ತಾಲ್ಲೂಕು, ಚಿಕ್ಕಬಳ್ಳಾಪುರ ಜಿಲ್ಲೆ.",
+  "merchant_phone": "9902711519",
+  "alternate_phone": "9743917615",
+  "customer_name": "ASHOKA. K.V.",
+  "customer_organization": "Malyco Pvt Ltd",
+  "invoice_number": "51",
+  "invoice_date": "2021-12-22",
+  "line_items": [
+    {
+      "item_code": 32,
+      "description": "20x20",
+      "quantity": 2,
+      "unit_price": 1500,
+      "amount": 3000
+    },
+    {
+      "item_code": 38,
+      "description": "ಚೇರ್",
+      "quantity": 150,
+      "unit_price": 10,
+      "amount": 1500
+    },
+    {
+      "item_code": 39,
+      "description": "ಸೈಡ್ ವಾಲ್",
+      "quantity": 6,
+      "unit_price": 500,
+      "amount": 3000
+    },
+    {
+      "item_code": 42,
+      "description": "ನೀರಿನ ಡ್ರಮ್",
+      "quantity": 2,
+      "unit_price": 200,
+      "amount": 400
+    },
+    {
+      "item_code": 44,
+      "description": "ಸ್ಟೀನ್ ಬಟ್ಟೆ",
+      "quantity": null,
+      "unit_price": 300,
+      "amount": 300
+    },
+    {
+      "item_code": 60,
+      "description": "ಬಾಡಿಗೆ",
+      "quantity": 1,
+      "unit_price": 1800,
+      "amount": 1800
+    }
+  ],
+  "total_amount": 10000.0,
+  "advance": null,
+  "balance_due": 10000.0,
+  "currency": null
+}

@@ -14,7 +14,6 @@ from ImageExtraction.logger import log_exception  # Use actual project path
 logger = logging.getLogger(__name__)
 
 
-
 CustomUser = get_user_model()
 class CreateUserAPIView(APIView):
     permission_classes = [AllowAny]
@@ -66,7 +65,6 @@ class CreateUserAPIView(APIView):
             )
 
 
-
 class UserListView(generics.ListAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
@@ -91,7 +89,6 @@ class ProfileDetailsView(APIView):
         
         return Response(serializer.data)
         
-
 class LoginView(APIView):
     permission_classes = [AllowAny]
 
@@ -133,70 +130,3 @@ class LoginView(APIView):
                 {'message': 'An unexpected error occurred during login. Please try again later.'},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
-
-
-# class LoginView(APIView):
-#     permission_classes = [AllowAny]  # 👈 Add this line
-
-#     def post(self, request):
-#         serializer = LoginSerializer(data=request.data)
-#         if serializer.is_valid():
-#             username = serializer.validated_data['username']
-#             password = serializer.validated_data['password']
-
-#             user = authenticate(request, username=username, password=password)
-
-#             if user is not None:
-#                 refresh = RefreshToken.for_user(user)
-#                 return Response({
-#                     'refresh': str(refresh),
-#                     'access': str(refresh.access_token),
-#                     'username': username,
-#                     'id': user.id,       
-#                     'role': user.role,            
-#                     'message': 'Login successful'
-#                 }, status=status.HTTP_200_OK)
-#             else:
-#                 return Response({'message': 'Invalid email or password'}, status=status.HTTP_401_UNAUTHORIZED)
-#         else:
-#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-
-# class CreateUserAPIView(APIView):
-#     permission_classes = [AllowAny]
-
-#     def post(self, request):
-#         serializer = UserSerializer(data=request.data)
-        
-#         if serializer.is_valid():
-#             email = serializer.validated_data['email']
-#             username = serializer.validated_data['username']
-
-            
-#             # Check if email already exists
-#             if CustomUser.objects.filter(email=email).exists():
-#                 return Response({'message': 'Email already registered'}, status=status.HTTP_400_BAD_REQUEST)
-            
-
-#             if CustomUser.objects.filter(username=username).exists():
-#                 return Response({'message': 'Username already taken'}, status=status.HTTP_400_BAD_REQUEST)
-
-#             # Proceed to create the user
-#             username = serializer.validated_data['username']
-#             password = serializer.validated_data['password']
-#             phone_number = serializer.validated_data['phone_number']
-
-#             user = CustomUser.objects.create_user(username=username, email=email, password=password)
-            
-#             # Optional: save phone_number if it's part of your CustomUser model
-#             user.phone_number = phone_number
-#             user.save()
-
-#             token = get_tokens_for_user(user)
-#             return Response({'token': token, 'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
-        
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)            

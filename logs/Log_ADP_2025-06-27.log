@@ -445,3 +445,391 @@ Response: {
 2025-06-27 14:27:04,871 | DEBUG    | urllib3.connectionpool | _new_conn            | Line 1052 | Starting new HTTPS connection (1): us-central1-aiplatform.googleapis.com:443
 2025-06-27 14:27:43,579 | DEBUG    | urllib3.connectionpool | _make_request        | Line 546  | https://us-central1-aiplatform.googleapis.com:443 "POST /v1/projects/vdxexccenter/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent HTTP/1.1" 200 None
 2025-06-27 14:27:43,630 | INFO     | ImageApp1.views | post                 | Line 524  | Document processed and saved successfully. Document ID: gAAAAABoXl0Hr9Wi69g78JYUKiQ4mQ15Bx6tBIBsyy_5WE2DBkYvFKMd2y_jnY7eyyIFUcYsVg9oCHKhDdiU2dDgal6-jBw5Aw==
+2025-06-27 15:45:24,354 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 15:46:08,264 | INFO     | authentication.views | post                 | Line 97   | Login attempt received.
+2025-06-27 15:46:36,316 | INFO     | authentication.views | post                 | Line 114  | Login successful for user: abc
+2025-06-27 15:47:25,026 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:47:25,073 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:47:25,105 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:47:25,130 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 399: response = call_gemini_api(
+2025-06-27 15:47:25,131 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 129: access_token, project_id = get_auth_details(service_account_key_path, scopes)
+2025-06-27 15:47:25,134 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 38: raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+2025-06-27 15:47:25,162 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 15:48:47,736 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:48:47,791 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:48:47,796 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:48:47,816 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 399: response = call_gemini_api(
+2025-06-27 15:48:47,820 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 129: access_token, project_id = get_auth_details(service_account_key_path, scopes)
+2025-06-27 15:48:47,829 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 38: raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+2025-06-27 15:48:47,836 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 15:49:11,392 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:49:11,439 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:49:11,451 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:49:11,473 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 399: response = call_gemini_api(
+2025-06-27 15:49:11,477 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 129: access_token, project_id = get_auth_details(service_account_key_path, scopes)
+2025-06-27 15:49:11,484 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 38: raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+2025-06-27 15:49:11,495 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 15:49:35,668 | INFO     | authentication.views | post                 | Line 97   | Login attempt received.
+2025-06-27 15:49:42,929 | INFO     | authentication.views | post                 | Line 114  | Login successful for user: abc
+2025-06-27 15:50:11,704 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:50:12,388 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:50:12,395 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:50:12,407 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 399: response = call_gemini_api(
+2025-06-27 15:50:12,409 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 129: access_token, project_id = get_auth_details(service_account_key_path, scopes)
+2025-06-27 15:50:12,412 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 38: raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+2025-06-27 15:50:12,417 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 15:50:16,701 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:50:16,730 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:50:16,733 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:50:16,743 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 399: response = call_gemini_api(
+2025-06-27 15:50:16,744 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 129: access_token, project_id = get_auth_details(service_account_key_path, scopes)
+2025-06-27 15:50:16,747 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 38: raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+2025-06-27 15:50:16,749 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 15:50:21,025 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:50:21,085 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:50:21,094 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 399, in post
+    response = call_gemini_api(
+               ^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 129, in call_gemini_api
+    access_token, project_id = get_auth_details(service_account_key_path, scopes)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py", line 38, in get_auth_details
+    raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+FileNotFoundError: Service account key file not found at: vdxexccenter-4b1dff9ce849.json
+2025-06-27 15:50:21,109 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 399: response = call_gemini_api(
+2025-06-27 15:50:21,111 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 129: access_token, project_id = get_auth_details(service_account_key_path, scopes)
+2025-06-27 15:50:21,125 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py, line 38: raise FileNotFoundError(f"Service account key file not found at: {service_account_key_path}")
+2025-06-27 15:50:21,129 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 15:51:15,830 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 15:51:56,771 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 15:54:10,447 | INFO     | authentication.views | post                 | Line 97   | Login attempt received.
+2025-06-27 15:54:20,913 | INFO     | authentication.views | post                 | Line 114  | Login successful for user: abc
+2025-06-27 15:54:55,534 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 15:55:07,419 | DEBUG    | urllib3.connectionpool | _new_conn            | Line 1052 | Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-27 15:55:07,910 | DEBUG    | urllib3.connectionpool | _make_request        | Line 546  | https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-27 15:55:09,101 | DEBUG    | urllib3.connectionpool | _new_conn            | Line 1052 | Starting new HTTPS connection (1): us-central1-aiplatform.googleapis.com:443
+2025-06-27 15:57:39,018 | DEBUG    | urllib3.connectionpool | _make_request        | Line 546  | https://us-central1-aiplatform.googleapis.com:443 "POST /v1/projects/vdxexccenter/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent HTTP/1.1" 200 None
+2025-06-27 15:57:39,303 | DEBUG    | urllib3.connectionpool | _new_conn            | Line 1052 | Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-27 15:57:39,587 | DEBUG    | urllib3.connectionpool | _make_request        | Line 546  | https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-27 15:57:39,605 | DEBUG    | urllib3.connectionpool | _new_conn            | Line 1052 | Starting new HTTPS connection (1): us-central1-aiplatform.googleapis.com:443
+2025-06-27 15:59:30,618 | DEBUG    | urllib3.connectionpool | _make_request        | Line 546  | https://us-central1-aiplatform.googleapis.com:443 "POST /v1/projects/vdxexccenter/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent HTTP/1.1" 200 None
+2025-06-27 15:59:30,812 | INFO     | ImageApp1.views | post                 | Line 524  | Document processed and saved successfully. Document ID: gAAAAABoXnKKcG-KQjBCx9jo6rNq8iX0ONe_FYVEo6uGB_nuS8j9HkGmsFHfCSNwX9vHdU2NQYuEUbW1cSrnVGpv2lZK5DRG6g==
+2025-06-27 16:01:22,270 | INFO     | ImageApp1.views | get                  | Line 91   | GetDocumentByIdView called with encrypted ID: gAAAAABoXnKKcG-KQjBCx9jo6rNq8iX0ONe_FYVEo6uGB_nuS8j9HkGmsFHfCSNwX9vHdU2NQYuEUbW1cSrnVGpv2lZK5DRG6g==
+2025-06-27 16:01:22,273 | DEBUG    | ImageApp1.views | get                  | Line 95   | Decrypted ID: 197
+2025-06-27 16:01:22,334 | INFO     | ImageApp1.views | get                  | Line 99   | Document 197 retrieved successfully
+2025-06-27 16:28:15,931 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageExtraction\logger.py changed, reloading.
+2025-06-27 16:28:24,023 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 16:33:51,628 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\authentication\views.py changed, reloading.
+2025-06-27 16:34:00,571 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 18:47:42,616 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageExtraction\settings.py changed, reloading.
+2025-06-27 18:48:07,847 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 18:49:45,918 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageExtraction\settings.py changed, reloading.
+2025-06-27 18:50:01,079 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:01:55,971 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py changed, reloading.
+2025-06-27 19:01:57,946 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:03:13,160 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\vertex_model.py changed, reloading.
+2025-06-27 19:03:15,047 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:05:17,354 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:07:21,040 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:07:39,449 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:08:10,524 | INFO     | authentication.views | post                 | Line 96   | Login attempt received.
+2025-06-27 19:08:12,537 | INFO     | authentication.views | post                 | Line 113  | Login successful for user: abc
+2025-06-27 19:09:39,247 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 19:11:46,702 | ERROR    | ImageApp1.views | post                 | Line 532  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 405, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:11:46,725 | ERROR    | ImageApp1.views | post                 | Line 533  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 405, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:11:46,734 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 405: parsed_json = json.loads(result)
+2025-06-27 19:11:46,734 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py, line 346: return _default_decoder.decode(s)
+2025-06-27 19:11:46,735 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py, line 337: obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+2025-06-27 19:11:46,736 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py, line 355: raise JSONDecodeError("Expecting value", s, err.value) from None
+2025-06-27 19:11:46,738 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 19:13:42,280 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 19:13:12,539 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:14:15,606 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:15:16,042 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:15:22,311 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:15:33,644 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 19:17:59,019 | ERROR    | ImageApp1.views | post                 | Line 533  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 406, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:17:59,028 | ERROR    | ImageApp1.views | post                 | Line 534  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 406, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:17:59,031 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 406: parsed_json = json.loads(result)
+2025-06-27 19:17:59,032 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py, line 346: return _default_decoder.decode(s)
+2025-06-27 19:17:59,032 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py, line 337: obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+2025-06-27 19:17:59,033 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py, line 355: raise JSONDecodeError("Expecting value", s, err.value) from None
+2025-06-27 19:17:59,034 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 19:23:32,136 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:23:34,527 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:23:42,668 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:24:33,033 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:24:35,705 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:24:41,954 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:24:48,725 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:24:57,476 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 19:26:24,901 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 19:27:05,866 | ERROR    | ImageApp1.views | post                 | Line 411  | JSON decode error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 409, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:27:05,873 | WARNING  |  django.request | log_response         | Line 253  | Bad Request: /IDA/upload/
+2025-06-27 19:27:31,053 | ERROR    | ImageApp1.views | post                 | Line 411  | JSON decode error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 409, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:27:31,055 | WARNING  |  django.request | log_response         | Line 253  | Bad Request: /IDA/upload/
+2025-06-27 19:31:30,519 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:31:32,971 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:31:40,732 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:33:01,161 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:33:03,431 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:33:12,983 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:33:28,586 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:33:30,842 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:33:37,776 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:33:44,637 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:33:52,379 | INFO     | ImageApp1.views | post                 | Line 302  | Upload request received
+2025-06-27 19:35:02,190 | ERROR    | ImageApp1.views | post                 | Line 548  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 410, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:35:02,196 | ERROR    | ImageApp1.views | post                 | Line 549  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 410, in post
+    parsed_json = json.loads(result)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-27 19:35:02,199 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 410: parsed_json = json.loads(result)
+2025-06-27 19:35:02,204 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\__init__.py, line 346: return _default_decoder.decode(s)
+2025-06-27 19:35:02,205 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py, line 337: obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+2025-06-27 19:35:02,206 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in C:\Users\pooja.akolkar\AppData\Local\anaconda3\Lib\json\decoder.py, line 355: raise JSONDecodeError("Expecting value", s, err.value) from None
+2025-06-27 19:35:02,208 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 19:47:30,211 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:47:53,292 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:48:18,952 | INFO     | authentication.views | post                 | Line 96   | Login attempt received.
+2025-06-27 19:48:20,116 | INFO     | authentication.views | post                 | Line 113  | Login successful for user: abc
+2025-06-27 19:48:50,649 | INFO     | ImageApp1.views | post                 | Line 321  | Upload request received
+2025-06-27 19:49:58,253 | ERROR    | ImageApp1.views | post                 | Line 429  | Invalid JSON received. Cannot parse JSON.
+NoneType: None
+2025-06-27 19:49:58,255 | WARNING  |  django.request | log_response         | Line 253  | Bad Request: /IDA/upload/
+2025-06-27 19:53:34,833 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:53:37,064 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:54:29,501 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:54:41,053 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:54:50,140 | INFO     | ImageApp1.views | post                 | Line 306  | Upload request received
+2025-06-27 19:56:23,595 | ERROR    | ImageApp1.views | post                 | Line 547  | 500
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 413, in post
+    parsed_json = safe_json_load(result)
+                  ^^^^^^^^^^^^^^
+NameError: name 'safe_json_load' is not defined
+2025-06-27 19:56:23,605 | ERROR    | ImageApp1.views | post                 | Line 548  | Error while processing document.
+Traceback (most recent call last):
+  File "D:\IDP_Project\ImageExtraction\ImageApp1\views.py", line 413, in post
+    parsed_json = safe_json_load(result)
+                  ^^^^^^^^^^^^^^
+NameError: name 'safe_json_load' is not defined
+2025-06-27 19:56:23,614 | ERROR    | ImageApp1.views | log_exception        | Line 71   | Exception occurred in D:\IDP_Project\ImageExtraction\ImageApp1\views.py, line 413: parsed_json = safe_json_load(result)
+2025-06-27 19:56:23,615 | ERROR    |  django.request | log_response         | Line 253  | Internal Server Error: /IDA/upload/
+2025-06-27 19:58:27,412 | INFO     | django.utils.autoreload | trigger_reload       | Line 265  | D:\IDP_Project\ImageExtraction\ImageApp1\views.py changed, reloading.
+2025-06-27 19:58:33,185 | INFO     | django.utils.autoreload | run_with_reloader    | Line 667  | Watching for file changes with StatReloader
+2025-06-27 19:58:49,479 | DEBUG    | google.cloud.storage._opentelemetry_tracing | <module>             | Line 42   | This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get Storage Tracing data.
+2025-06-27 19:58:59,731 | INFO     | ImageApp1.views | post                 | Line 306  | Upload request received

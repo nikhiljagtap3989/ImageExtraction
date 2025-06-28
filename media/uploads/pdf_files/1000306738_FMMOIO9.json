@@ -1,0 +1,615 @@
+{
+  "university_name": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+  "university_address": "GANESHKHIND, PUNE 411007.",
+  "program_name": "MASTER OF BUSINESS ADMINISTRATION (REV.2019) - APRIL 2022",
+  "student_details": {
+    "student_name": "ISHWARKATTI PRAMOD ADAVYAPPA",
+    "mother_name": "SANGITA",
+    "seat_no": "36969",
+    "centre_no": "0331",
+    "prn_no": "2052000324",
+    "institute_name": "0331 AUDYOGIK SHIKSHAN MANDAL'S INSTITUTE OF BUSINESS MANAGEMENT & RESEARCH, CHINCHWAD"
+  },
+  "courses": [
+    {
+      "semester": 1,
+      "subject_code": "GC-01",
+      "subject_name": "MANAGERIAL ACCOUNTING",
+      "internal_marks": 41,
+      "exam_marks": 44,
+      "total_marks": 85,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 1,
+      "subject_code": "GC-02",
+      "subject_name": "ORGANIZATIONAL BEHAVIOUR",
+      "internal_marks": 42,
+      "exam_marks": 50,
+      "total_marks": 92,
+      "credits": "P 03",
+      "grade": "O",
+      "grade_points_earned": 30
+    },
+    {
+      "semester": 1,
+      "subject_code": "GC-03",
+      "subject_name": "ECONOMIC ANALYSIS FOR BUSINESS DECISIONS",
+      "internal_marks": 39,
+      "exam_marks": 50,
+      "total_marks": 89,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 1,
+      "subject_code": "GC-04",
+      "subject_name": "BUSINESS RESEARCH METHODS",
+      "internal_marks": 41,
+      "exam_marks": 50,
+      "total_marks": 91,
+      "credits": "P 03",
+      "grade": "O",
+      "grade_points_earned": 30
+    },
+    {
+      "semester": 1,
+      "subject_code": "GC-05",
+      "subject_name": "BASICS OF MARKETING",
+      "internal_marks": 37,
+      "exam_marks": 50,
+      "total_marks": 87,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 1,
+      "subject_code": "GC-06",
+      "subject_name": "DIGITAL BUSINESS",
+      "internal_marks": 41,
+      "exam_marks": 41,
+      "total_marks": 82,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 1,
+      "subject_code": "GE-UL-01",
+      "subject_name": "MANAGEMENT FUNDAMENTALS",
+      "internal_marks": null,
+      "exam_marks": 48,
+      "total_marks": 48,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 1,
+      "subject_code": "GE-UL-03",
+      "subject_name": "ENTREPRENEURSHIP DEVELOPMENT",
+      "internal_marks": null,
+      "exam_marks": 50,
+      "total_marks": 50,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 1,
+      "subject_code": "GE-UL-05",
+      "subject_name": "LEGAL ASPECTS OF BUSINESS",
+      "internal_marks": null,
+      "exam_marks": 48,
+      "total_marks": 48,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 1,
+      "subject_code": "GE-IL-03",
+      "subject_name": "SELLING & NEGOTIATION SKILLS LAB",
+      "internal_marks": 37,
+      "exam_marks": null,
+      "total_marks": 37,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": 16
+    },
+    {
+      "semester": 1,
+      "subject_code": "GE-IL-04",
+      "subject_name": "MS EXCEL",
+      "internal_marks": 42,
+      "exam_marks": null,
+      "total_marks": 42,
+      "credits": "P 02",
+      "grade": "A",
+      "grade_points_earned": 18
+    },
+    {
+      "semester": 1,
+      "subject_code": "GE-IL-05",
+      "subject_name": "BUSINESS SYSTEMS & PROCEDURES",
+      "internal_marks": 39,
+      "exam_marks": null,
+      "total_marks": 39,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": 16
+    },
+    {
+      "semester": 1,
+      "subject_code": null,
+      "subject_name": "HUMAN RIGHTS - I",
+      "internal_marks": 19,
+      "exam_marks": null,
+      "total_marks": 19,
+      "credits": "P 01",
+      "grade": "B",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 1,
+      "subject_code": null,
+      "subject_name": "INTRODUCTION TO CYBER SECURITY-1",
+      "internal_marks": 21,
+      "exam_marks": null,
+      "total_marks": 21,
+      "credits": "P 01",
+      "grade": "A",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 2,
+      "subject_code": "GC-07",
+      "subject_name": "MARKETING MANAGEMENT",
+      "internal_marks": 37,
+      "exam_marks": 41,
+      "total_marks": 78,
+      "credits": "P 03",
+      "grade": "B",
+      "grade_points_earned": 24
+    },
+    {
+      "semester": 2,
+      "subject_code": "GC-08",
+      "subject_name": "FINANCIAL MANAGEMENT",
+      "internal_marks": 37,
+      "exam_marks": 46,
+      "total_marks": 83,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 2,
+      "subject_code": "GC-09",
+      "subject_name": "HUMAN RESOURCES MANAGEMENT",
+      "internal_marks": 38,
+      "exam_marks": 49,
+      "total_marks": 87,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 2,
+      "subject_code": "GC-10",
+      "subject_name": "OPERATIONS & SUPPLY CHAIN MANAGEMENT",
+      "internal_marks": 35,
+      "exam_marks": 50,
+      "total_marks": 85,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 2,
+      "subject_code": "SC-BA-01",
+      "subject_name": "BASIC BUSINESS ANALYTICS USING R",
+      "internal_marks": 37,
+      "exam_marks": 43,
+      "total_marks": 80,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 2,
+      "subject_code": "SC-BA-02",
+      "subject_name": "DATA MINIMG",
+      "internal_marks": 35,
+      "exam_marks": 50,
+      "total_marks": 85,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 2,
+      "subject_code": "GE-UL-07",
+      "subject_name": "CONTEMPORARY FRAMEWORKS IN MANAGEMENT",
+      "internal_marks": null,
+      "exam_marks": 50,
+      "total_marks": 50,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 2,
+      "subject_code": "GE-UL-09",
+      "subject_name": "START UP AND NEW VENTURE MANAGEMENT",
+      "internal_marks": null,
+      "exam_marks": 44,
+      "total_marks": 44,
+      "credits": "P 02",
+      "grade": "A",
+      "grade_points_earned": 18
+    },
+    {
+      "semester": 2,
+      "subject_code": "GE-UL-11",
+      "subject_name": "BUSINESS, GOVERNMENT & SOCIETY",
+      "internal_marks": null,
+      "exam_marks": 46,
+      "total_marks": 46,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 2,
+      "subject_code": "GE-IL-09",
+      "subject_name": "INDUSTRY ANALYSIS & DESK RESEARCH",
+      "internal_marks": 35,
+      "exam_marks": null,
+      "total_marks": 35,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": 16
+    },
+    {
+      "semester": 2,
+      "subject_code": "SE-IL-BA-01",
+      "subject_name": "MARKETING ANALYTICS",
+      "internal_marks": 35,
+      "exam_marks": null,
+      "total_marks": 35,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": 16
+    },
+    {
+      "semester": 2,
+      "subject_code": "SE-IL-BA-02",
+      "subject_name": "RETAILING ANALYTICS",
+      "internal_marks": 34,
+      "exam_marks": null,
+      "total_marks": 34,
+      "credits": "P 02",
+      "grade": "C",
+      "grade_points_earned": 14
+    },
+    {
+      "semester": 2,
+      "subject_code": null,
+      "subject_name": "HUMAN RIGHTS - II",
+      "internal_marks": 19,
+      "exam_marks": null,
+      "total_marks": 19,
+      "credits": "P 01",
+      "grade": "B",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 2,
+      "subject_code": null,
+      "subject_name": "INTRODUCTION TO CYBER SECURITY - II",
+      "internal_marks": 18,
+      "exam_marks": null,
+      "total_marks": 18,
+      "credits": "P 01",
+      "grade": "B",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 3,
+      "subject_code": "GC-11",
+      "subject_name": "STRATEGIC MANAGEMENT",
+      "internal_marks": 37,
+      "exam_marks": 49,
+      "total_marks": 86,
+      "credits": "P 03",
+      "grade": "A",
+      "grade_points_earned": 27
+    },
+    {
+      "semester": 3,
+      "subject_code": "GC-12",
+      "subject_name": "DECISION SCIENCE",
+      "internal_marks": 38,
+      "exam_marks": 39,
+      "total_marks": 77,
+      "credits": "P 03",
+      "grade": "B",
+      "grade_points_earned": 24
+    },
+    {
+      "semester": 3,
+      "subject_code": "GC-13",
+      "subject_name": "SUMMER INTERNSHIP PROJECT",
+      "internal_marks": 26,
+      "exam_marks": 32,
+      "total_marks": 58,
+      "credits": "P 06",
+      "grade": "D",
+      "grade_points_earned": 36
+    },
+    {
+      "semester": 3,
+      "subject_code": "SC-BA-03",
+      "subject_name": "ADVANCED STATISTICAL METHODS USING R",
+      "internal_marks": 33,
+      "exam_marks": 40,
+      "total_marks": 73,
+      "credits": "P 03",
+      "grade": "B",
+      "grade_points_earned": 24
+    },
+    {
+      "semester": 3,
+      "subject_code": "SC-MKT-04",
+      "subject_name": "SALES & DISTRIBUTION MANAGEMENT",
+      "internal_marks": 35,
+      "exam_marks": 44,
+      "total_marks": 79,
+      "credits": "P 03",
+      "grade": "B",
+      "grade_points_earned": 24
+    },
+    {
+      "semester": 3,
+      "subject_code": "GE-UL-13",
+      "subject_name": "INTERNATIONAL BUSINESS ECONOMICS",
+      "internal_marks": null,
+      "exam_marks": 49,
+      "total_marks": 49,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 3,
+      "subject_code": "GE-UL-17",
+      "subject_name": "CORPORATE GOVERNANCE",
+      "internal_marks": null,
+      "exam_marks": 50,
+      "total_marks": 50,
+      "credits": "P 02",
+      "grade": "O",
+      "grade_points_earned": 20
+    },
+    {
+      "semester": 3,
+      "subject_code": "GE-UL-18",
+      "subject_name": "MANAGEMENT OF NON-PROFIT ORGANIZATIONS",
+      "internal_marks": null,
+      "exam_marks": 39,
+      "total_marks": 39,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": 16
+    },
+    {
+      "semester": 3,
+      "subject_code": "SE-IL-BA-06",
+      "subject_name": "SOCIAL MEDIA, WEB & TEXT ANALYTICS",
+      "internal_marks": 30,
+      "exam_marks": null,
+      "total_marks": 30,
+      "credits": "P 02",
+      "grade": "C",
+      "grade_points_earned": 14
+    },
+    {
+      "semester": 3,
+      "subject_code": "SE-IL-BA-07",
+      "subject_name": "INDUSTRIAL INTERNET OF THINGS",
+      "internal_marks": 29,
+      "exam_marks": null,
+      "total_marks": 29,
+      "credits": "P 02",
+      "grade": "D",
+      "grade_points_earned": 12
+    },
+    {
+      "semester": 3,
+      "subject_code": "SE-IL-MKT-11",
+      "subject_name": "MARKETING ANALYTICS",
+      "internal_marks": 38,
+      "exam_marks": null,
+      "total_marks": 38,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": 16
+    },
+    {
+      "semester": 3,
+      "subject_code": null,
+      "subject_name": "INTRODUCTION TO CYBER SECURITY - III",
+      "internal_marks": 19,
+      "exam_marks": null,
+      "total_marks": 19,
+      "credits": "P 01",
+      "grade": "B",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 3,
+      "subject_code": null,
+      "subject_name": "SKILL DEVELOPMENT - I",
+      "internal_marks": 30,
+      "exam_marks": null,
+      "total_marks": 30,
+      "credits": "P 02",
+      "grade": "C",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 3,
+      "subject_code": null,
+      "subject_name": "INTRODUCTION TO CONSTITUTION",
+      "internal_marks": 38,
+      "exam_marks": null,
+      "total_marks": 38,
+      "credits": "P 02",
+      "grade": "B",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 4,
+      "subject_code": "GC-14",
+      "subject_name": "ENTERPRISE PERFORMANCE MANAGEMENT",
+      "internal_marks": 29,
+      "exam_marks": 25,
+      "total_marks": 54,
+      "credits": "* 03",
+      "grade": "D",
+      "grade_points_earned": 18
+    },
+    {
+      "semester": 4,
+      "subject_code": "GC-15",
+      "subject_name": "INDIAN ETHOS & BUSINESS ETHICS",
+      "internal_marks": 30,
+      "exam_marks": 33,
+      "total_marks": 63,
+      "credits": "*03",
+      "grade": "C",
+      "grade_points_earned": 21
+    },
+    {
+      "semester": 4,
+      "subject_code": "SC-BA-05",
+      "subject_name": "ECONOMICS OF NETWORK INDUSTRIES",
+      "internal_marks": 34,
+      "exam_marks": 40,
+      "total_marks": 74,
+      "credits": "*03",
+      "grade": "B",
+      "grade_points_earned": 24
+    },
+    {
+      "semester": 4,
+      "subject_code": "SC-MKT-06",
+      "subject_name": "MARKETING STRATEGY",
+      "internal_marks": 32,
+      "exam_marks": 26,
+      "total_marks": 58,
+      "credits": "*03",
+      "grade": "D",
+      "grade_points_earned": 18
+    },
+    {
+      "semester": 4,
+      "subject_code": "GE-UL-19",
+      "subject_name": "GLOBAL STRATEGIC MANAGEMENT",
+      "internal_marks": null,
+      "exam_marks": 25,
+      "total_marks": 25,
+      "credits": "* 02",
+      "grade": "D",
+      "grade_points_earned": 12
+    },
+    {
+      "semester": 4,
+      "subject_code": "GE-UL-22",
+      "subject_name": "CORPORATE SOCIAL RESPOSIBILITY & SUSTAINA",
+      "internal_marks": null,
+      "exam_marks": 20,
+      "total_marks": 20,
+      "credits": "* 02",
+      "grade": "P",
+      "grade_points_earned": 8
+    },
+    {
+      "semester": 4,
+      "subject_code": "SE-IL-MKT-13",
+      "subject_name": "CUSTOMER RELATIONSHIP MANAGEMENT",
+      "internal_marks": 31,
+      "exam_marks": null,
+      "total_marks": 31,
+      "credits": "* 02",
+      "grade": "C",
+      "grade_points_earned": 14
+    },
+    {
+      "semester": 4,
+      "subject_code": "SE-IL-BA-14",
+      "subject_name": "HEALTHCARE ANALYTICS",
+      "internal_marks": 28,
+      "exam_marks": null,
+      "total_marks": 28,
+      "credits": "*02",
+      "grade": "D",
+      "grade_points_earned": 12
+    },
+    {
+      "semester": 4,
+      "subject_code": null,
+      "subject_name": "INTRODUCTION TO CYBER SECURITY - IV",
+      "internal_marks": 20,
+      "exam_marks": null,
+      "total_marks": 20,
+      "credits": "* 01",
+      "grade": "A",
+      "grade_points_earned": null
+    },
+    {
+      "semester": 4,
+      "subject_code": null,
+      "subject_name": "SKILL DEVELOPMENT - II",
+      "internal_marks": 31,
+      "exam_marks": null,
+      "total_marks": 31,
+      "credits": "*02",
+      "grade": "C",
+      "grade_points_earned": null
+    }
+  ],
+  "summary": {
+    "grand_total_marks": 2493,
+    "grand_total_out_of": 3200,
+    "sgpa": [
+      {
+        "semester": 1,
+        "sgpa": 9.27
+      },
+      {
+        "semester": 2,
+        "sgpa": 8.77
+      },
+      {
+        "semester": 3,
+        "sgpa": 7.77
+      },
+      {
+        "semester": 4,
+        "sgpa": 6.35
+      }
+    ],
+    "total_points": 901,
+    "total_credits": 110,
+    "final_percentage": 77.91,
+    "cgpa": 8.19,
+    "final_result": "FIRST CLASS WITH DISTINCTION",
+    "result_date": "14 November 2022"
+  }
+}

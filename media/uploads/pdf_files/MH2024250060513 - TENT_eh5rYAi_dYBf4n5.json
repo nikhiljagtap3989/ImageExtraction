@@ -1,0 +1,59 @@
+{
+  "issuer": {
+    "name": "M.N.S. ಶಾಮಿಯಾನ ಹೌಸ್ ಅಂಡ್ ಫ್ಲವರ್ ಡೆಕೋರೇಟರ್ಸ್",
+    "phone": [
+      "9902711519",
+      "9743917615"
+    ],
+    "address": "ಮಾಡಿಕೆರೆ ಕ್ರಾಸ್, ಊಲವಾಡಿ ಪಂಚಾಯ್ತಿ, ಚಿಂತಾಮಣಿ ತಾಲ್ಲೂಕು, ಚಿಕ್ಕಬಳ್ಳಾಪುರ ಜಿಲ್ಲೆ.",
+    "proprietor": "ಎನ್. ಮಂಜುನಾಥರೆಡ್ಡಿ"
+  },
+  "customer": {
+    "name": "ASHOKA. K.V. MALYCO PVT LTD",
+    "billing_address": "Clicka Balana"
+  },
+  "invoice_number": "51",
+  "issue_date": "22/12/20214",
+  "line_items": [
+    {
+      "description": "ಚೇರ್",
+      "quantity": 150,
+      "unit_price": 10,
+      "amount": 1500.0
+    },
+    {
+      "description": "ಸೈಡ್ ವಾಲ್",
+      "quantity": 6,
+      "unit_price": 500,
+      "amount": 3000.0
+    },
+    {
+      "description": "ನೀರಿನ ಡ್ರಮ್",
+      "quantity": 2,
+      "unit_price": 200,
+      "amount": 400.0
+    },
+    {
+      "description": "ಮೈಕ್ ಸೆಟ್",
+      "quantity": 1,
+      "unit_price": 300,
+      "amount": 300.0
+    },
+    {
+      "description": "20x20",
+      "quantity": 2,
+      "unit_price": 1500,
+      "amount": 3000.0
+    },
+    {
+      "description": "ಬಾಡಿಗೆ",
+      "quantity": 1,
+      "unit_price": 1800,
+      "amount": 1800.0
+    }
+  ],
+  "total_amount": 10000.0,
+  "advance": null,
+  "balance_due": 10000.0,
+  "currency": null
+}
