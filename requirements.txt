@@ -225,4 +225,4 @@ xlrd==2.0.1
 yarl==1.8.2
 zipp==3.11.0
 google-cloud-aiplatform==1.48.0
-
+vertexai==1.71.1

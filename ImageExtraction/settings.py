@@ -219,7 +219,14 @@ FERNET_KEY = b'0JrZYrB4GSD1agNWN_wZGJn8dEUmuXOb-02rLyubWDY='
 # import os
 # os.environ["VERTEX_SERVICE_ACCOUNT"] = "D:/IDP_AI_App/Backend/Django Projects (2)/Django Projects/ImageExtraction/keys/vertex.json"
 
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
-}
+from datetime import timedelta
+
+# SIMPLE_JWT = {
+#     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),   # 🔐 30-minute access token
+#     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),      # Optional: 1-day refresh token
+#     'ROTATE_REFRESH_TOKENS': False,
+#     'BLACKLIST_AFTER_ROTATION': False,
+#     'AUTH_HEADER_TYPES': ('Bearer',),
+#     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+# }
+
